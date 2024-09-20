@@ -1,0 +1,6 @@
+[submodule "LuaCsForBarotrauma"]
+	path = LuaCsForBarotrauma
+	url = https://github.com/evilfactory/LuaCsForBarotrauma
+[submodule "luacs-docs/lua/libs/ldoc"]
+	path = luacs-docs/lua/libs/ldoc
+	url = https://github.com/evilfactory/LDoc.git
