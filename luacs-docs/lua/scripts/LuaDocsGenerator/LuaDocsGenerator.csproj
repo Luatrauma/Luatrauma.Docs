@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../../../Barotrauma/BarotraumaClient/LinuxClient.csproj" PrivateAssets="false">
+    <ProjectReference Include="../../../../LuaCsForBarotrauma/Barotrauma/BarotraumaClient/LinuxClient.csproj" PrivateAssets="false">
       <Private></Private>
       <Aliases>BarotraumaClient</Aliases>
     </ProjectReference>
-    <ProjectReference Include="../../../../Barotrauma\BarotraumaServer\LinuxServer.csproj">
+    <ProjectReference Include="../../../../LuaCsForBarotrauma/Barotrauma\BarotraumaServer\LinuxServer.csproj">
       <Aliases>BarotraumaServer</Aliases>
     </ProjectReference>
-    <ProjectReference Include="../../../../Libraries/Farseer Physics Engine 3.5/Farseer.NetStandard.csproj" PrivateAssets="false" />
+    <ProjectReference Include="../../../../LuaCsForBarotrauma/Libraries/Farseer Physics Engine 3.5/Farseer.NetStandard.csproj" PrivateAssets="false" />
   </ItemGroup>
 </Project>
