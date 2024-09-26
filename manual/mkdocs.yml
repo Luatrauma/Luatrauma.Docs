@@ -1,0 +1,34 @@
+site_name: Luatrauma Docs
+site_url: https://luatrauma.github.io/Luatrauma.Docs
+theme:
+  name: material
+  palette:
+    scheme: slate
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+nav:
+  - Welcome: "index.md"
+  - Installation: "installation.md"
+  - Lua:
+    - "Getting Started": "lua/getting-started.md"
+    - "Errors": "lua/errors.md"
+    - "Hooks": "lua/hooks.md"
+    - "Patching": "lua/patching.md"
+    - "Networking": "lua/networking.md"
+    - "Examples" : "https://github.com"
+    - "API Reference": "/api/lua/"
+  - CSharp:
+    - Introduction: "cs/introduction.md"
+    - "In-Memory CSharp Mods": "cs/setup-in-memory-csharp.md"
+    - "Assembly CSharp Mods": "cs/setup-assembly-csharp.md"
+    - Development:
+      - "Using Harmony": "cs/development/harmony.md"
+    - "API Reference": "/api/cs/client/html"
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

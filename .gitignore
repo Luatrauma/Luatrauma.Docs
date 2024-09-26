@@ -41,3 +41,6 @@ desktop.ini
 
 #Rider
 *.DotSettings.user
+
+build/
+!*.empty

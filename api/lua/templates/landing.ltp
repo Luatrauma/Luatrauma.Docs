@@ -1,0 +1,13 @@
+<div class="landing">
+  <h1>Lua For Barotrauma API Reference</h1>
+</div>
+
+<div class="wrapper">
+  <p style="text-align: center;"></p>
+  <h2>Welcome to the Lua For Barotrauma API Reference!</h2>
+
+  <h2>Links</h2>
+  <p>
+    <a href="https://github.com/evilfactory/LuaCsForBarotrauma" target="_blank">Source Code</a><br>
+  </p>
+</div>

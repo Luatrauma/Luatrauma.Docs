@@ -1,6 +1,9 @@
 [submodule "LuaCsForBarotrauma"]
-	path = LuaCsForBarotrauma
+	path = libs/LuaCsForBarotrauma
 	url = https://github.com/evilfactory/LuaCsForBarotrauma
-[submodule "luacs-docs/lua/libs/ldoc"]
-	path = luacs-docs/lua/libs/ldoc
+[submodule "libs/doxygen-awesome-css"]
+	path = libs/doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
+[submodule "libs/ldoc"]
+	path = libs/ldoc
 	url = https://github.com/evilfactory/LDoc.git
