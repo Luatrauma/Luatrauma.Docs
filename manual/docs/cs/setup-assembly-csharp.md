@@ -43,6 +43,7 @@ First rename the `MyModName.sln` file to the name of your mod. IE: `ExampleMod.s
 Then open up the Solution file (`.sln`) from the Skeleton Project in Visual Studio. Just verify that there are not errors related to "Unable to find Reference", this means that all assemblies in `/Refs` have be found successfully.
 
 After that, in your IDE, you will need to do the following for all `.csproj` files:
+
 ```asciidoc
 - LinuxClient.csproj
 - LinuxServer.csproj
@@ -99,11 +100,13 @@ This will give us a debug build of LuaCsForBarotrauma. A debug build gives us ac
 - Important: When cloning, use the command `git clone --recurse-submodules --remote-submodules https://github.com/evilfactory/LuaCsForBarotrauma.git`. This will download the submodules automatically.
 
 2. Open up the LuaCs Solution in your IDE based on your Operating System, one of:
+
 ```asciidoc
 - WindowsSolution.sln
 - MacSolution.sln
 - LinuxSolution.sln
  ```
+ 
 -- NOTE: This assumes that you are using the `WindowsSolution.sln`. For other platforms, the naming of files may be slightly different (MacXXX, LinuxXXX, where 'XXX' is either "Client" or "Server").
 
 3. In the Project Settings for `WindowsClient` and `WindowsServer`, you want to change the `Platform Target` from `Any CPU` to `x64`. This is necessary for OpenAL code to build successfully.

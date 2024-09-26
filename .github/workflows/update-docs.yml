@@ -4,6 +4,10 @@ name: Update documentation
 
 on:
   workflow_dispatch:
+  push:
+    branches: [master]
+    paths-ignore:
+      - ".github/**"
 
 env:
   CI_DEPLOY_DIR: luacs-docs/ci-deploy
