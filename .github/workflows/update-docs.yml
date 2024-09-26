@@ -31,7 +31,7 @@ jobs:
       - uses: leafo/gh-actions-luarocks@e65774a6386cb4f24e293dca7fc4ff89165b64c5 # v4.3.0
 
       - name: Install doxygen
-        run: sudo apt-get update && sudo apt-get install -y doxygen
+        run: ./install_doxygen.sh
 
       - name: Install mkdocs
         run: sudo apt-get update && sudo apt-get install -y python3 python3-pip && pip install mkdocs-material

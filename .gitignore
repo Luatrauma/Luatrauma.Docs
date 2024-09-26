@@ -44,3 +44,6 @@ desktop.ini
 
 build/
 !*.empty
+
+libs/doxygen.tar.gz
+libs/doxygen/*
