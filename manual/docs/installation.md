@@ -2,7 +2,7 @@
 
 This mod currently has 3 main ways you can install it, steam launch command, content package and manual installation. We will go through each one of them here.
 
-## Steam launch command
+## Launch option install
 
 The mod can be automatically installed and kept up to date via a special steam launch command, this is the easiest way to install the mod and it's recommended for most users. Here's how to do it:
 
@@ -24,7 +24,7 @@ The mod can be automatically installed and kept up to date via a special steam l
 
 And you are done. Now every time you launch the game, the mod will be automatically installed and kept up to date. If you want to uninstall the mod, just remove the launch command and verify the integrity of the game files.
 
-## Content package
+## Content package install
 
 You can also install this mod by downloading the content package on the steam workshop, this used to be the old way to install the mod before the steam launch command was introduced, but it's still a valid way to install the mod.
 
@@ -44,7 +44,7 @@ You can also install this mod by downloading the content package on the steam wo
 
 Note, the client-side installation will be lost if you verify the integrity of the game files or if a new game update is released, so you will need to repeat the process if that happens. Also note that you need to keep the content package updated, otherwise you can run into issues.
 
-## Manual installation
+## Manual install
 
 And lastly, you can manually install the mod by simply downloading the patch files and pasting them into your game files.
 
