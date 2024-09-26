@@ -15,15 +15,15 @@ nav:
     - "Hooks": "lua/hooks.md"
     - "Patching": "lua/patching.md"
     - "Networking": "lua/networking.md"
-    - "Examples" : "https://github.com"
-    - "API Reference": "/api/lua/"
+    - "Examples" : "https://github.com/Luatrauma/Luatrauma.LuaExamples"
+    - "API Reference": "/Luatrauma.Docs/api/lua/"
   - CSharp:
     - Introduction: "cs/introduction.md"
     - "In-Memory CSharp Mods": "cs/setup-in-memory-csharp.md"
     - "Assembly CSharp Mods": "cs/setup-assembly-csharp.md"
     - Development:
       - "Using Harmony": "cs/development/harmony.md"
-    - "API Reference": "/api/cs/client/html"
+    - "API Reference": "/Luatrauma.Docs/api/cs/client/html"
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

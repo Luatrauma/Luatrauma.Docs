@@ -63,7 +63,7 @@ cd $API_DIR
 rm -rf $DIR/build/api/lua
 mkdir $DIR/build/api/lua
 
+"$ldoc_path" .
+
 cp -r ./js/. $DIR/build/api/lua
 cp -r ./css/. $DIR/build/api/lua
-
-"$ldoc_path" .
