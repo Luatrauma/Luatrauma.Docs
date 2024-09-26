@@ -43,7 +43,7 @@ jobs:
         run: ./build_api_lua.sh
 
       - name: Build CS API Reference
-        run: ./build_cs_lua.sh
+        run: ./build_api_cs.sh
 
       - name: Create tarball
         run: |
