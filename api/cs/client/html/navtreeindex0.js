@@ -1,6 +1,6 @@
 var NAVTREEINDEX0 =
 {
-"/api/cs/server/html":[0],
+"/Luatrauma.Docs/api/cs/server/html":[0],
 "ACsMod_8cs.html":[3,0,0,0,0,0,0,10,1,0],
 "AICharacter_8cs.html":[3,0,0,0,0,0,0,0,6],
 "AIChatMessage_8cs.html":[3,0,0,0,0,0,0,0,7],

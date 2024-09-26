@@ -23,7 +23,7 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Barotrauma Server",url:"/api/cs/server/html"},
+{text:"Barotrauma Server",url:"/Luatrauma.Docs/api/cs/server/html"},
 {text:"Main Page",url:"index.html"},
 {text:"Packages",url:"namespaces.html",children:[
 {text:"Package List",url:"namespaces.html"},

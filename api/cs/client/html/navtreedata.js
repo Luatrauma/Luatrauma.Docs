@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Barotrauma Client", "index.html", [
-    [ "Barotrauma Server", "/api/cs/server/html", null ],
+    [ "Barotrauma Server", "/Luatrauma.Docs/api/cs/server/html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -61,7 +61,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"/api/cs/server/html",
+"/Luatrauma.Docs/api/cs/server/html",
 "CharacterAbilityModifyValue_8cs.html",
 "Enums_8cs.html#a58236f02e27bd781c6f1dfe9aa224e2aa253c960c09e91dd66f962c6a7b065134",
 "GameSettings_8cs.html#a70a53af53142ae1cc4adeb79f766af75ab9f5c797ebbf55adccdd8539a65a0241",
