@@ -906,8 +906,8 @@
 <h3 id="4-setup-the-project">4. Setup the project</h3>
 <p>First rename the <code>MyModName.sln</code> file to the name of your mod. IE: <code>ExampleMod.sln</code>.</p>
 <p>Then open up the Solution file (<code>.sln</code>) from the Skeleton Project in Visual Studio. Just verify that there are not errors related to "Unable to find Reference", this means that all assemblies in <code>/Refs</code> have be found successfully.</p>
-<p>After that, in your IDE, you will need to do the following for all <code>.csproj</code> files:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>- LinuxClient.csproj
+<p>After that, in your IDE, you will need to do the following for all <code>.csproj</code> files:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>- LinuxClient.csproj
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>- LinuxServer.csproj
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- OSXClient.csproj
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>- OSXServer.csproj
@@ -961,16 +961,15 @@
 <p>Important: When cloning, use the command <code>git clone --recurse-submodules --remote-submodules https://github.com/evilfactory/LuaCsForBarotrauma.git</code>. This will download the submodules automatically.</p>
 </li>
 <li>
-<p>Open up the LuaCs Solution in your IDE based on your Operating System, one of:
-```asciidoc</p>
+<p>Open up the LuaCs Solution in your IDE based on your Operating System, one of:</p>
 </li>
-<li>WindowsSolution.sln</li>
-<li>MacSolution.sln</li>
-<li>
-<p>LinuxSolution.sln
- <code>``
--- NOTE: This assumes that you are using the</code>WindowsSolution.sln`. For other platforms, the naming of files may be slightly different (MacXXX, LinuxXXX, where 'XXX' is either "Client" or "Server").</p>
-</li>
+</ol>
+<p><code>asciidoc
+- WindowsSolution.sln
+- MacSolution.sln
+- LinuxSolution.sln</code></p>
+<p>-- NOTE: This assumes that you are using the <code>WindowsSolution.sln</code>. For other platforms, the naming of files may be slightly different (MacXXX, LinuxXXX, where 'XXX' is either "Client" or "Server").</p>
+<ol>
 <li>
 <p>In the Project Settings for <code>WindowsClient</code> and <code>WindowsServer</code>, you want to change the <code>Platform Target</code> from <code>Any CPU</code> to <code>x64</code>. This is necessary for OpenAL code to build successfully.</p>
 </li>
