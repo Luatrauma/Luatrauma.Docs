@@ -1,0 +1,25 @@
+var classBarotrauma_1_1ShipIssueWorker =
+[
+    [ "ShipIssueWorker", "classBarotrauma_1_1ShipIssueWorker.html#a2336940936fab622f58f85e279b5b2db", null ],
+    [ "CalculateImportance", "classBarotrauma_1_1ShipIssueWorker.html#a9a4511107189aebe6570f924337a7e88", null ],
+    [ "CalculateImportanceSpecific", "classBarotrauma_1_1ShipIssueWorker.html#af70f29caaa05fe26da6ced0d6b67f1e1", null ],
+    [ "IsIssueViable", "classBarotrauma_1_1ShipIssueWorker.html#ab360429f9b0479ce52b4ea45b9044639", null ],
+    [ "OrderAttendedTo", "classBarotrauma_1_1ShipIssueWorker.html#a165d7ff73adf92edccb243e68cb09532", null ],
+    [ "RemoveOrder", "classBarotrauma_1_1ShipIssueWorker.html#a25444da268a51403d10aab98335473bb", null ],
+    [ "SetOrder", "classBarotrauma_1_1ShipIssueWorker.html#a54b963cae4ef63c9e77cd317ccc0f84f", null ],
+    [ "shipCommandManager", "classBarotrauma_1_1ShipIssueWorker.html#affa64db1ee93c14492f0da511eb79d04", null ],
+    [ "Active", "classBarotrauma_1_1ShipIssueWorker.html#a64795c2c804d5077c8ae56ba8ce8a872", null ],
+    [ "AllowEasySwitching", "classBarotrauma_1_1ShipIssueWorker.html#ac538521ca7d03afada85675f516d295d", null ],
+    [ "CommandingCharacter", "classBarotrauma_1_1ShipIssueWorker.html#a7526afbf65bea55b57975b58ed014dae", null ],
+    [ "CurrentOrder", "classBarotrauma_1_1ShipIssueWorker.html#a3ba325f64984f8dba80059530bb43f06", null ],
+    [ "CurrentRedundancy", "classBarotrauma_1_1ShipIssueWorker.html#a23985909dc4d6b6fc87a2679884b41c8", null ],
+    [ "Importance", "classBarotrauma_1_1ShipIssueWorker.html#ad9009fe53f35dc1298539632fd48c241", null ],
+    [ "Option", "classBarotrauma_1_1ShipIssueWorker.html#a4f8d81715181dd8df5814ca4b3b2525e", null ],
+    [ "OrderedCharacter", "classBarotrauma_1_1ShipIssueWorker.html#ad0139a97c3db2b4b000dbc1640955af3", null ],
+    [ "RedundantIssueModifier", "classBarotrauma_1_1ShipIssueWorker.html#ab3ea7ce31f6a0c1c5a696f569b4f5986", null ],
+    [ "StopDuringEmergency", "classBarotrauma_1_1ShipIssueWorker.html#aec5b914cbabc91d0c914a6ae8309cea1", null ],
+    [ "SuggestedOrder", "classBarotrauma_1_1ShipIssueWorker.html#ad025c2672b45237f1475d9d7f7054932", null ],
+    [ "TargetItem", "classBarotrauma_1_1ShipIssueWorker.html#a2285a991defb3efb128f536607b7ddec", null ],
+    [ "TargetItemComponent", "classBarotrauma_1_1ShipIssueWorker.html#a744373c0cd980bf8219e55faa42cb95d", null ],
+    [ "TimeSinceLastAttempt", "classBarotrauma_1_1ShipIssueWorker.html#a6c7a1b25581f6edcb836a91087416db4", null ]
+];

@@ -1,0 +1,4 @@
+var CharacterAbilityApplyStatusEffectsToLastOrderedCharacter_8cs =
+[
+    [ "Barotrauma.Abilities.CharacterAbilityApplyStatusEffectsToLastOrderedCharacter", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToLastOrderedCharacter.html", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToLastOrderedCharacter" ]
+];

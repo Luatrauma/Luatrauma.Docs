@@ -1,0 +1,28 @@
+var classBarotrauma_1_1AnimationParams =
+[
+    [ "ClearHistory", "classBarotrauma_1_1AnimationParams.html#a8ac7bc2da6d1bed44b1aa42d404b68e0", null ],
+    [ "Deserialize", "classBarotrauma_1_1AnimationParams.html#a8ba0d753b53b368a5c6ecaf246dc3a50", null ],
+    [ "Load", "classBarotrauma_1_1AnimationParams.html#abad6632a85d7d298666856991a0faa23", null ],
+    [ "Redo", "classBarotrauma_1_1AnimationParams.html#a8d0f8b70ab4a0768408ed5ec480824d0", null ],
+    [ "Serialize", "classBarotrauma_1_1AnimationParams.html#a7ab237fc4c5bbb2125ce3c8dbfe697db", null ],
+    [ "StoreSnapshot", "classBarotrauma_1_1AnimationParams.html#a8078e12edff9b618944433f717e7c5cd", null ],
+    [ "StoreSnapshot< T >", "classBarotrauma_1_1AnimationParams.html#a12f6d41fe001cf87ae5d18bc05c2d45b", null ],
+    [ "Undo", "classBarotrauma_1_1AnimationParams.html#aac66fb44f4fc15dd09a6dcdf62a97cf3", null ],
+    [ "UpdatePath", "classBarotrauma_1_1AnimationParams.html#af7721045e96c951f1e10d0741259a361", null ],
+    [ "AnimationType", "classBarotrauma_1_1AnimationParams.html#a21613048d702acdcf01865994c088e1e", null ],
+    [ "ArmIKStrength", "classBarotrauma_1_1AnimationParams.html#a7d19f55d529018b970aea6643ab1a21d", null ],
+    [ "CycleSpeed", "classBarotrauma_1_1AnimationParams.html#a29ced8332e46a898eb566f799edadab8", null ],
+    [ "FootTorque", "classBarotrauma_1_1AnimationParams.html#aa30755ecbb5fb7749168ecc219b5d0e5", null ],
+    [ "HandIKStrength", "classBarotrauma_1_1AnimationParams.html#a21939e18063238a042ecb6c45747f82e", null ],
+    [ "HeadAngle", "classBarotrauma_1_1AnimationParams.html#a3f168182bbbad2d6171a5bc603ab49b4", null ],
+    [ "HeadAngleInRadians", "classBarotrauma_1_1AnimationParams.html#ab06d486e74d6a79b07b6f52c807eb281", null ],
+    [ "HeadTorque", "classBarotrauma_1_1AnimationParams.html#a874f9da05856bf7bfc696259de4dc1b7", null ],
+    [ "IsGroundedAnimation", "classBarotrauma_1_1AnimationParams.html#a0644db2b89b0876c783cd535acf83950", null ],
+    [ "IsSwimAnimation", "classBarotrauma_1_1AnimationParams.html#a54ee50b58846e1223708b08254c62842", null ],
+    [ "Memento", "classBarotrauma_1_1AnimationParams.html#aadb5f2940d02d49ef3b612a07e3dd3fc", null ],
+    [ "MovementSpeed", "classBarotrauma_1_1AnimationParams.html#a43dc14cbc73b0efb6f6b9333bb48726e", null ],
+    [ "SpeciesName", "classBarotrauma_1_1AnimationParams.html#a319b1fff91c590b3b6e6de320662d200", null ],
+    [ "TorsoAngle", "classBarotrauma_1_1AnimationParams.html#a764be94c315d82da731f011bba5a8c09", null ],
+    [ "TorsoAngleInRadians", "classBarotrauma_1_1AnimationParams.html#a0532b619a69723a885866ba69dd81d57", null ],
+    [ "TorsoTorque", "classBarotrauma_1_1AnimationParams.html#ac19cf3d5fd4cd050bf0629a38e775b96", null ]
+];

@@ -1,0 +1,4 @@
+var CharacterAbilityApplyStatusEffectsToAttacker_8cs =
+[
+    [ "Barotrauma.Abilities.CharacterAbilityApplyStatusEffectsToAttacker", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToAttacker.html", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToAttacker" ]
+];

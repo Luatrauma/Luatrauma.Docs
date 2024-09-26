@@ -1,0 +1,35 @@
+var classBarotrauma_1_1LocalizedString =
+[
+    [ "LoadedSuccessfully", "classBarotrauma_1_1LocalizedString.html#a9f69ab5a89a5c2623ab7be9c2d75177c", [
+      [ "Unknown", "classBarotrauma_1_1LocalizedString.html#a9f69ab5a89a5c2623ab7be9c2d75177ca88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "No", "classBarotrauma_1_1LocalizedString.html#a9f69ab5a89a5c2623ab7be9c2d75177cabafd7322c6e97d25b6299b5d6fe8920b", null ],
+      [ "Yes", "classBarotrauma_1_1LocalizedString.html#a9f69ab5a89a5c2623ab7be9c2d75177ca93cba07454f06a4a960172bbd6e2a435", null ]
+    ] ],
+    [ "CompareTo", "classBarotrauma_1_1LocalizedString.html#a9150aa530e8d0cb677a5d269e1dca76d", null ],
+    [ "Contains", "classBarotrauma_1_1LocalizedString.html#af03da61252b96cb8d4cf3aeccd85d49c", null ],
+    [ "Contains", "classBarotrauma_1_1LocalizedString.html#a16033ceb537250f690d43067903c3276", null ],
+    [ "Equals", "classBarotrauma_1_1LocalizedString.html#aca4e8051a345386f6cfa1750a909b5ec", null ],
+    [ "Equals", "classBarotrauma_1_1LocalizedString.html#a54edda41bb7ec10812ba0277e9330b33", null ],
+    [ "Equals", "classBarotrauma_1_1LocalizedString.html#a246ab17c5562a611c95b08d60ae2d6fd", null ],
+    [ "Fallback", "classBarotrauma_1_1LocalizedString.html#a1c0e34ba9ff88d96cb6836fb26b8eddc", null ],
+    [ "GetHashCode", "classBarotrauma_1_1LocalizedString.html#a4cb3fc001da17a80b81eef00d1117b29", null ],
+    [ "MustRetrieveValue", "classBarotrauma_1_1LocalizedString.html#ae23fb4aac2a006f5e602d28959b086f8", null ],
+    [ "Replace", "classBarotrauma_1_1LocalizedString.html#aae61a0c7b4158b5c37a7ebbcf3741d3f", null ],
+    [ "Replace", "classBarotrauma_1_1LocalizedString.html#a293888b882915289effa3356eddf37cf", null ],
+    [ "Replace", "classBarotrauma_1_1LocalizedString.html#a043ce4a181d6b410ccb595c0370cb350", null ],
+    [ "RetrieveValue", "classBarotrauma_1_1LocalizedString.html#a605cf33b5bb93c9e0979323a687f6612", null ],
+    [ "Split", "classBarotrauma_1_1LocalizedString.html#a5f8bb78f65e947932627038b31450dfa", null ],
+    [ "StartsWith", "classBarotrauma_1_1LocalizedString.html#afa243159e48598a13dfb6c91f2a8769f", null ],
+    [ "StartsWith", "classBarotrauma_1_1LocalizedString.html#add85a215bd5e7697aaf747f61e645e94", null ],
+    [ "ToLower", "classBarotrauma_1_1LocalizedString.html#a36b011bad0062396f1b6a92df14b3fd0", null ],
+    [ "ToString", "classBarotrauma_1_1LocalizedString.html#a551414897fb8c74e4f70e5408913d569", null ],
+    [ "ToUpper", "classBarotrauma_1_1LocalizedString.html#a9650fe09a6b788961d13836762cf05fb", null ],
+    [ "TrimEnd", "classBarotrauma_1_1LocalizedString.html#ab840beea13cff609e3d3591432ab7fae", null ],
+    [ "TrimStart", "classBarotrauma_1_1LocalizedString.html#a96bb6a8d1e17f7c3fe4a16c38f9e6f2c", null ],
+    [ "UpdateLanguage", "classBarotrauma_1_1LocalizedString.html#a4ec788b6ca09acfe74be9e875bc03db2", null ],
+    [ "cachedValue", "classBarotrauma_1_1LocalizedString.html#a4bca5d110233f1190b1b9844ba1e3b07", null ],
+    [ "Language", "classBarotrauma_1_1LocalizedString.html#a0fa1a7682f3fc39c3f879f427fdfd7e0", null ],
+    [ "Length", "classBarotrauma_1_1LocalizedString.html#aac5ba809b00b4b50fcbfc0ad4c5f10ef", null ],
+    [ "Loaded", "classBarotrauma_1_1LocalizedString.html#a84cb57f038b6d4ebba23b9a9a8e7b2f0", null ],
+    [ "Value", "classBarotrauma_1_1LocalizedString.html#a1d49a0b0daba172e0f369a9d23cae293", null ]
+];

@@ -1,0 +1,46 @@
+var classBarotrauma_1_1LevelTrigger =
+[
+    [ "TriggererType", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaee", [
+      [ "None", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Human", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeeac1bb19b27818343c1926119b958741b5", null ],
+      [ "Creature", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea35a88e03e6699907873597f5549e0b7a", null ],
+      [ "Character", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea76a40e4f974fd895a0a2598c1cee28b4", null ],
+      [ "Submarine", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea0d234e5bcf75c768eb0db6bf96e3c22d", null ],
+      [ "Item", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea7d74f3b92b19da5e606d737d339a9679", null ],
+      [ "OtherTrigger", "classBarotrauma_1_1LevelTrigger.html#a6eb22c874094fec8d34f71af142ecaeea19b7aa12b7264806db49291b63eba164", null ]
+    ] ],
+    [ "TriggerForceMode", "classBarotrauma_1_1LevelTrigger.html#a531edafb3c209f64005545fc83910a1b", [
+      [ "Force", "classBarotrauma_1_1LevelTrigger.html#a531edafb3c209f64005545fc83910a1ba9eb6b78a99cdb6ffd3d40d18621d9f80", null ],
+      [ "Acceleration", "classBarotrauma_1_1LevelTrigger.html#a531edafb3c209f64005545fc83910a1ba3b926d163371fd620b09b63219b12f52", null ],
+      [ "Impulse", "classBarotrauma_1_1LevelTrigger.html#a531edafb3c209f64005545fc83910a1ba6b0a227bd9315bcde12dbcf6c217a9d7", null ],
+      [ "LimitVelocity", "classBarotrauma_1_1LevelTrigger.html#a531edafb3c209f64005545fc83910a1bac49e6c1c191a472a0957a6bb3a968619", null ]
+    ] ],
+    [ "LevelTrigger", "classBarotrauma_1_1LevelTrigger.html#a005346ac8eeae80a75cc8c2896871d8c", null ],
+    [ "GetWaterFlowVelocity", "classBarotrauma_1_1LevelTrigger.html#a335c524b2337b23246dee4aa3c2581b3", null ],
+    [ "GetWaterFlowVelocity", "classBarotrauma_1_1LevelTrigger.html#a2e891c50d3d3ebb704329b208e77ef7c", null ],
+    [ "OtherTriggered", "classBarotrauma_1_1LevelTrigger.html#a33eb2ae6f7084f98e5fc090c5a004e9e", null ],
+    [ "ServerWrite", "classBarotrauma_1_1LevelTrigger.html#a4cfa3130fa80eb6082f2870312ab30b1", null ],
+    [ "Update", "classBarotrauma_1_1LevelTrigger.html#ab2e0df11d20a56bd8f653e4159580538", null ],
+    [ "OnTriggered", "classBarotrauma_1_1LevelTrigger.html#a6ec79c0cb791b32ea4f5e41d6fd5493a", null ],
+    [ "ParentTrigger", "classBarotrauma_1_1LevelTrigger.html#a6a0e095157b5006ceff9bbd47963e2c1", null ],
+    [ "ColliderRadius", "classBarotrauma_1_1LevelTrigger.html#a0706510dff9ddceb914bb800b98e3302", null ],
+    [ "Force", "classBarotrauma_1_1LevelTrigger.html#a9ad2f02efe4c8b5b6205bba5c0d395cc", null ],
+    [ "ForceFalloff", "classBarotrauma_1_1LevelTrigger.html#a1d2dd88cadbd8938f9f39dde9fcf6197", null ],
+    [ "ForceFluctuationInterval", "classBarotrauma_1_1LevelTrigger.html#a4ca4edf1c3c5094a02b3db8956dde64f", null ],
+    [ "ForceFluctuationStrength", "classBarotrauma_1_1LevelTrigger.html#afafab828f2278dab1571efa8ab7cccc6", null ],
+    [ "ForceMode", "classBarotrauma_1_1LevelTrigger.html#a7a0df53ccc0fbc37facab9883a602fa9", null ],
+    [ "ForceVelocityLimit", "classBarotrauma_1_1LevelTrigger.html#a7a00a1283fc694d001f3653ad9bf5a6a", null ],
+    [ "GlobalForceDecreaseInterval", "classBarotrauma_1_1LevelTrigger.html#a57aea119e525ba18a222900b4a8ca7f3", null ],
+    [ "InfectIdentifier", "classBarotrauma_1_1LevelTrigger.html#a3506c4565cdad07165b36c4ab2e25a99", null ],
+    [ "InfectionChance", "classBarotrauma_1_1LevelTrigger.html#a2c95e0cced735a96668d386b5c6cfc2e", null ],
+    [ "IsTriggered", "classBarotrauma_1_1LevelTrigger.html#a583bee6dc9f631dfc6f83b000b9fabee", null ],
+    [ "NeedsNetworkSyncing", "classBarotrauma_1_1LevelTrigger.html#ad7ea7fd7c1b53da36bd40d62fa5c3f2d", null ],
+    [ "PhysicsBody", "classBarotrauma_1_1LevelTrigger.html#a0c71f6b7ca011d71cb8bafeba37064e7", null ],
+    [ "Rotation", "classBarotrauma_1_1LevelTrigger.html#ad7f5e24afce88616fbd1b573f8e02645", null ],
+    [ "StatusEffects", "classBarotrauma_1_1LevelTrigger.html#ad518e457773d56418513617061f80f2d", null ],
+    [ "TriggererPosition", "classBarotrauma_1_1LevelTrigger.html#a83aa73f73353e315fe223165bba5cb39", null ],
+    [ "Triggerers", "classBarotrauma_1_1LevelTrigger.html#a377a1eceb0f87e7be62d176811406774", null ],
+    [ "TriggerOthersDistance", "classBarotrauma_1_1LevelTrigger.html#a3a95c74b40c6b19120f8e766fcc6fcc2", null ],
+    [ "UseNetworkSyncing", "classBarotrauma_1_1LevelTrigger.html#abaaba9cb519d5e4c5c2fe65d1f88a793", null ],
+    [ "WorldPosition", "classBarotrauma_1_1LevelTrigger.html#aa4090bd0a381cd8dcc834b53386d8bae", null ]
+];

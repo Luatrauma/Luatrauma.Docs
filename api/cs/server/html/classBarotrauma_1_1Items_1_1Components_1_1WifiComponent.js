@@ -1,0 +1,27 @@
+var classBarotrauma_1_1Items_1_1Components_1_1WifiComponent =
+[
+    [ "WifiComponent", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#acc0d0adbcc4c8c5fe861855e1fae9dec", null ],
+    [ "CanReceive", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a975958d6daf2e2e313903aa391615243", null ],
+    [ "CanTransmit", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a24170b18ea6681624312af91d4d8d46b", null ],
+    [ "CanTransmit", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a268a7cce9b206e54b592686d9542804c", null ],
+    [ "GetChannelMemory", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a6b3e67c033c00559286fd0f0c689faa8", null ],
+    [ "GetReceiversInRange", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a6424494042f0a68af28468f20082d9be", null ],
+    [ "GetTransmittersInRange", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a9f2142e5fac0afbe92be20838ec45a24", null ],
+    [ "Load", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a6e5bde51df5550f65f93c003cefe13ae", null ],
+    [ "OnItemLoaded", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a5e7ce4bcb9d96b025d84c74b1449bd60", null ],
+    [ "ReceiveSignal", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a66d55be6ec0c654cf03262ca8be7d653", null ],
+    [ "RemoveComponentSpecific", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a980200943524b6074e140383ceec7803", null ],
+    [ "Save", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a76d1cdd73a06c63d32a5db08084ec804", null ],
+    [ "ServerEventWrite", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#abe7fc253eff04e062a7815103a3e70a4", null ],
+    [ "SetChannelMemory", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#adfb75f1c58844e7e43a09c4dd81de721", null ],
+    [ "TransmitSignal", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a8bed8edf0590e51ae981dd5b54413e44", null ],
+    [ "Update", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a6b506734ac50e8a3a66ea3e2f1ba008d", null ],
+    [ "AllowCrossTeamCommunication", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#af01f832a57080ac0de0e016fdabc38b6", null ],
+    [ "Channel", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a50a0f3e13809acbe723211ef5dd6561d", null ],
+    [ "DiscardDuplicateChatMessages", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#ac8165fd990005766d22c80564a1a52cb", null ],
+    [ "JamTimer", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#afb713c7a7dd303dfc71f2a8674f73094", null ],
+    [ "LinkToChat", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#aa2ce3fb26a75fa33f485d987e58b4146", null ],
+    [ "MinChatMessageInterval", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#ab035b2d63af3712af129fdbb3907c230", null ],
+    [ "Range", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a39125fb4f02b2b506354cf831091d418", null ],
+    [ "TeamID", "classBarotrauma_1_1Items_1_1Components_1_1WifiComponent.html#a6d3132e6d7a139ae31e961c441a31ea7", null ]
+];

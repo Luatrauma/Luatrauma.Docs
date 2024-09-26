@@ -1,0 +1,26 @@
+var classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch =
+[
+    [ "BallastFloraBranch", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#ac0c15a9a4c0d39e15770aab993d847aa", null ],
+    [ "UpdateHealth", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a506f703bed8db9ebd25a79fe98097c51", null ],
+    [ "UpdatePulse", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a5783fb735553ceb2da0254a703bc206c", null ],
+    [ "AccumulatedDamage", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a925ce325e9f178d58c7d185f04311321", null ],
+    [ "AttackItem", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#acb0bc99ba6b86cca99d3aba3a2b1e981", null ],
+    [ "ClaimedItem", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a64ca0224b0f455c329c96567f9703efe", null ],
+    [ "ClaimedItemId", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a3d952c1ebb5bd6fcb2e505d5868446b7", null ],
+    [ "Connections", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a8e2e7c6155f9d2a1c2cb129a282ec6fb", null ],
+    [ "CurrentHull", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a4390de84ef7694149d5e2e2cda5e1caf", null ],
+    [ "DamageVisualizationTimer", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a873c6b2623445bf0b60bc250df0e761f", null ],
+    [ "DisconnectedFromRoot", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a4a0415c22b69b904714a0f4edb688b77", null ],
+    [ "ID", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a07bc1ccc2c90f878044ecaabbf8e32d1", null ],
+    [ "IsRoot", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a558ea345e81b08e64f5184494ba86837", null ],
+    [ "IsRootGrowth", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a2b72883d62ee4f2ee017b0b41d21b8a5", null ],
+    [ "MaxHealth", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a16699d9209f1ac7f2984e0504b0adfe3", null ],
+    [ "ParentBallastFlora", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a615394b65ffc774ac37907911064786d", null ],
+    [ "Pulse", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#afc4364e32fd29cf5ebe23b76129da002", null ],
+    [ "Removed", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a8243a9155b0c337c88510415dc09e5d8", null ],
+    [ "RemoveTimer", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a0ea5317a6f9bbb67500aba0d32dd404f", null ],
+    [ "SpawningItem", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a1dd4419dad19793cdd65caf13ee5958a", null ],
+    [ "BranchDepth", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a2a1702c252248073bc1b08f524119198", null ],
+    [ "Health", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a851702fa27222624c09927bb406adb59", null ],
+    [ "ParentBranch", "classBarotrauma_1_1MapCreatures_1_1Behavior_1_1BallastFloraBranch.html#a69d58f6e50ab2244556e115bb42608da", null ]
+];

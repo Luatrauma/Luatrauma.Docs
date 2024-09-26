@@ -1,0 +1,26 @@
+var classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon =
+[
+    [ "RangedWeapon", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a1aa2556558136fe81aa7228f71df161f", null ],
+    [ "Equip", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a650684ba833991f6c2ce461a2cbf09b7", null ],
+    [ "FindProjectile", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a09be495e4c66121c30e43cea4de25475", null ],
+    [ "SecondaryUse", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a90eef6d93e4bec01fdd72b066e6be14d", null ],
+    [ "Update", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a448f216849732902c6e87365eb58bd7c", null ],
+    [ "Use", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a530746dbea363a31f55f5f292a9cde1a", null ],
+    [ "BarrelPos", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a290b23f5a34d0d55491ec0aee16dc2ba", null ],
+    [ "DualWieldAccuracyPenalty", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a1e1e96b300b651a73e0c4412adbbe34e", null ],
+    [ "DualWieldReloadTimePenaltyMultiplier", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a0cef119ac48ec12adb8fe85ef2c04ddb", null ],
+    [ "HoldTrigger", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a986391e9d8525df06534be8a86488cf9", null ],
+    [ "LastProjectile", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a4f622ad0a75c2f26adf85bc91fad543f", null ],
+    [ "LaunchImpulse", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a0059cbe44de597388fa6cf2cb8120909", null ],
+    [ "MaxChargeTime", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a1fde92a38fb616d5f8893269c145eb41", null ],
+    [ "Penetration", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a3331b2b61825686ea4dd970d7a6dab7e", null ],
+    [ "ProjectileCount", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a4941265c3813cb3295bbc88fb0a279e6", null ],
+    [ "Reload", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#af6486fcceefe099f7d5694f5015f4b36", null ],
+    [ "ReloadNoSkill", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a72c707ed620e0f25d388cf3f22d92410", null ],
+    [ "ReloadSkillRequirement", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a93a4d575b149fe3a6f4e7bec2324577e", null ],
+    [ "ReloadTimer", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#aa4981488c3766e44d777d4dcf01068d5", null ],
+    [ "Spread", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#a6188c465c30f7afbdf96fd7da2c19991", null ],
+    [ "TransformedBarrelPos", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#af50b5864abd9106f141db0df6a49f8b0", null ],
+    [ "UnskilledSpread", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#aac45aafc8bcc2ad261d75d5927346a4c", null ],
+    [ "WeaponDamageModifier", "classBarotrauma_1_1Items_1_1Components_1_1RangedWeapon.html#ae831d80379484c364e8b5834e7328419", null ]
+];

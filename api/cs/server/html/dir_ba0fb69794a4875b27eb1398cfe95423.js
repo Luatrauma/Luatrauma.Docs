@@ -1,0 +1,25 @@
+var dir_ba0fb69794a4875b27eb1398cfe95423 =
+[
+    [ "NetStructs", "dir_d404e434b4b6d23f5c9907fbd8c60b9c.html", "dir_d404e434b4b6d23f5c9907fbd8c60b9c" ],
+    [ "Shapes", "dir_186d61f3ada8e419012a86d27d9aaeda.html", "dir_186d61f3ada8e419012a86d27d9aaeda" ],
+    [ "AssemblyInfo.cs", "AssemblyInfo_8cs.html", null ],
+    [ "CoordinateSpace2D.cs", "CoordinateSpace2D_8cs.html", "CoordinateSpace2D_8cs" ],
+    [ "CrossThread.cs", "CrossThread_8cs.html", null ],
+    [ "CursedDictionary.cs", "CursedDictionary_8cs.html", null ],
+    [ "Homoglyphs.cs", "Homoglyphs_8cs.html", "Homoglyphs_8cs" ],
+    [ "HttpUtility.cs", "HttpUtility_8cs.html", "HttpUtility_8cs" ],
+    [ "IdRemap.cs", "IdRemap_8cs.html", "IdRemap_8cs" ],
+    [ "LinkedPairSet.cs", "LinkedPairSet_8cs.html", "LinkedPairSet_8cs" ],
+    [ "ListDictionary.cs", "ListDictionary_8cs.html", "ListDictionary_8cs" ],
+    [ "Md5Hash.cs", "Md5Hash_8cs.html", "Md5Hash_8cs" ],
+    [ "MTRandom.cs", "MTRandom_8cs.html", "MTRandom_8cs" ],
+    [ "Rand.cs", "Rand_8cs.html", null ],
+    [ "ReadOnlyListExtensions.cs", "ReadOnlyListExtensions_8cs.html", null ],
+    [ "RichTextData.cs", "RichTextData_8cs.html", "RichTextData_8cs" ],
+    [ "SafeIO.cs", "SafeIO_8cs.html", "SafeIO_8cs" ],
+    [ "SaveUtil.cs", "SaveUtil_8cs.html", null ],
+    [ "SegmentTable.cs", "SegmentTable_8cs.html", "SegmentTable_8cs" ],
+    [ "SerializableDateTime.cs", "SerializableDateTime_8cs.html", "SerializableDateTime_8cs" ],
+    [ "TaskExtensions.cs", "TaskExtensions_8cs.html", null ],
+    [ "ToolBox.cs", "ToolBox_8cs.html", "ToolBox_8cs" ]
+];

@@ -1,0 +1,4 @@
+var CharacterAbilityApplyStatusEffectsToNearestAlly_8cs =
+[
+    [ "Barotrauma.Abilities.CharacterAbilityApplyStatusEffectsToNearestAlly", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToNearestAlly.html", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToNearestAlly" ]
+];

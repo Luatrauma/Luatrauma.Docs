@@ -1,0 +1,4 @@
+var CharacterAbilityApplyStatusEffectsToRandomAlly_8cs =
+[
+    [ "Barotrauma.Abilities.CharacterAbilityApplyStatusEffectsToRandomAlly", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToRandomAlly.html", "classBarotrauma_1_1Abilities_1_1CharacterAbilityApplyStatusEffectsToRandomAlly" ]
+];
