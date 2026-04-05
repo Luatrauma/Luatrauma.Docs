@@ -48,11 +48,13 @@ We will be using Git in the installation going forward.
 ### 5. Setup the Project
 - Download the [Luatrauma reference dlls](https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) zip file and extract the contents into the `/Refs/` folder in your project.
 - Open `Build.props` and go to the `User/Mod Settings` section.
+- Replace `ModDeployDir` with the path to your Barotrauma local mods, ie. `<BarotraumaGame>/LocalMods/<YourModName>/`:
+> - Note: ModDeployDir must end with a '\\'
+> - Example: "C:\Program Files\Steam\steamapps\Barotrauma\LocalMods\MyModName\\"
 - Replace `AssemblyName` and `RootNamespace` with your mod's name using the following rules:
 > - No spaces
 > - No special characters (ie.  < >, \ / ;) except for periods ( . )
 > - Use English characters
-- Replace `ModDeployDir` with the path to your Barotrauma installation -> `/LocalMods/<YourModLocation>/`:
-> - Note: ModDeployDir must end with a '\\'
-
-.
+- Copy the `AssemblyName` and then open `Assets/Content/ModConfig.xml`.
+- Replace `[MODASSEMBLYNAME]` with your `AssemblyName` (keep the .dll ending).
+> Tip: Use Notepad++ or other editor's 'Find and Replace' function.
