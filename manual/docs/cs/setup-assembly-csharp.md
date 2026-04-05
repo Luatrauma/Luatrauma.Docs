@@ -55,3 +55,4 @@ We will be using Git in the installation going forward.
 - Replace `ModDeployDir` with the path to your Barotrauma installation -> `/LocalMods/<YourModLocation>/`:
 > - Note: ModDeployDir must end with a '\\'
 
+.
