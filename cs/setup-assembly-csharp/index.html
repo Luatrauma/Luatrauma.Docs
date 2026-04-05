@@ -1038,6 +1038,13 @@
 <ul>
 <li>Download the <a href="https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip">Luatrauma reference dlls</a> zip file and extract the contents into the <code>/Refs/</code> folder in your project.</li>
 <li>Open <code>Build.props</code> and go to the <code>User/Mod Settings</code> section.</li>
+<li>Replace <code>ModDeployDir</code> with the path to your Barotrauma local mods, ie. <code>&lt;BarotraumaGame&gt;/LocalMods/&lt;YourModName&gt;/</code>:<blockquote>
+<ul>
+<li>Note: ModDeployDir must end with a '\'</li>
+<li>Example: "C:\Program Files\Steam\steamapps\Barotrauma\LocalMods\MyModName\"</li>
+</ul>
+</blockquote>
+</li>
 <li>Replace <code>AssemblyName</code> and <code>RootNamespace</code> with your mod's name using the following rules:<blockquote>
 <ul>
 <li>No spaces</li>
@@ -1046,14 +1053,12 @@
 </ul>
 </blockquote>
 </li>
-<li>Replace <code>ModDeployDir</code> with the path to your Barotrauma installation -&gt; <code>/LocalMods/&lt;YourModLocation&gt;/</code>:<blockquote>
-<ul>
-<li>Note: ModDeployDir must end with a '\'</li>
-</ul>
+<li>Copy the <code>AssemblyName</code> and then open <code>Assets/Content/ModConfig.xml</code>.</li>
+<li>Replace <code>[MODASSEMBLYNAME]</code> with your <code>AssemblyName</code> (keep the .dll ending).<blockquote>
+<p>Tip: Use Notepad++ or other editor's 'Find and Replace' function.</p>
 </blockquote>
 </li>
 </ul>
-<p>.</p>
 
 
 
