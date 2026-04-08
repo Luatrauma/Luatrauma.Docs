@@ -756,10 +756,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
+  <a href="#project-structure-and-where-to-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Structure
+        Project Structure and Where to Code
       
     </span>
   </a>
@@ -1003,10 +1003,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
+  <a href="#project-structure-and-where-to-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Structure
+        Project Structure and Where to Code
       
     </span>
   </a>
@@ -1031,7 +1031,8 @@
 
 
 <h1 id="assembly-c-mod">Assembly (C#) Mod</h1>
-<p>This type of mod creates compiled binaries/dll without code written in C#/.NET. The benefits of this workflow and mod type compared to a Lua mod are:</p>
+<p>Last Updated: 2026-04-09<br/>
+This type of mod creates compiled binaries/dll without code written in C#/.NET. The benefits of this workflow and mod type compared to a Lua mod are:</p>
 <blockquote>
 <ul>
 <li>Complete access to all Barotrauma functions.</li>
@@ -1070,12 +1071,20 @@
 <ul>
 <li>Create/Log in to your Github account and then go to <a href="https://github.com/Luatrauma/LuaCsModTemplate">LuaCsModTemplate</a>.</li>
 <li>In the top-right corner, click <code>Use this Template</code>.</li>
-<li>Name the repository the name of your mod.</li>
+<li>Name the repository the name of your mod.
+<br/><blockquote>
+<p><img alt="github-use-template-1191x628.png" src="../../assets/img/cs/github-use-template-1191x628.png" /><br/></p>
+</blockquote>
+</li>
 </ul>
 <h3 id="4-clonecreate-local-mod-copy">4. Clone/Create Local Mod Copy</h3>
 <ul>
 <li>In your new github repo, select the green <code>&lt;&gt; Code</code> button and copy the HTTPS repo link.</li>
-<li>Go to the directory on your PC where you want to store the project.</li>
+<li>Go to the directory on your PC where you want to store the project.
+<br/><blockquote>
+<p><img alt="github-clone-link-450x364.png" src="../../assets/img/cs/github-clone-link-450x364.png" /><br/></p>
+</blockquote>
+</li>
 <li>Open Git Bash or CMD in that folder/directory (Google how to for your platform).</li>
 <li>in the terminal type: <code>git clone &lt;paste your repo link here&gt;</code> and press enter.</li>
 <li>When completed, verify that the folder matches what you see on your Github repo.</li>
@@ -1091,39 +1100,67 @@
 </ul>
 </blockquote>
 </li>
-<li>Replace <code>AssemblyName</code> and <code>RootNamespace</code> with your mod's name using the following rules:<blockquote>
+<li>
+<p>Replace <code>AssemblyName</code> and <code>RootNamespace</code> with your mod's name using the following rules:</p>
+<blockquote>
 <ul>
 <li>No spaces</li>
 <li>No special characters (ie.  &lt; &gt;, \ / ;). Periods (.) are allowed.</li>
-<li>Use English characters only</li>
+<li>Use English characters only
+<br/>
+<br/><img alt="build-props-1245x886.png" src="../../assets/img/cs/build-props-1245x886.png" /><br/></li>
 </ul>
 </blockquote>
 </li>
-<li>Copy the <code>AssemblyName</code> and then open <code>Assets/Content/ModConfig.xml</code>.</li>
+<li>
+<p>Copy the <code>AssemblyName</code> and then open <code>Assets/Content/ModConfig.xml</code>.</p>
+</li>
 <li>Replace <code>[MODASSEMBLYNAME]</code> with your <code>AssemblyName</code> (keep the .dll ending).<blockquote>
 <p>Tip: Use Notepad++ or another editor's 'Find and Replace' function.</p>
 </blockquote>
 </li>
-<li>In the main directory, rename <code>MyModName.sln</code> to your mod's name.</li>
 </ul>
+<p><br/><img alt="mod-config-modassemblyname-1033x408.png" src="../../assets/img/cs/mod-config-modassemblyname-1033x408.png" /><br/>
+- In the main directory, rename <code>MyModName.sln</code> to your mod's name.</p>
 <h3 id="6-test-the-project">6. Test the Project.</h3>
 <ul>
 <li>Open the renamed <code>&lt;MyModName.sln&gt;</code>.</li>
 <li>Build the project.</li>
-<li>In the top bar, select the Launch Option / Configuration for your system (ie. <code>WindowsClient: Launch Barotrauma</code> ).</li>
+<li>In the top bar, select the Startup Project, then Launch Option / Configuration for your system (ie. <code>WindowsClient: Launch Barotrauma</code> ).
+<br/>
+<br/>
+<strong>Visual Studio</strong>:
+<br/><blockquote>
+<p><img alt="startup-profile-select-vs-442x266.png" src="../../assets/img/cs/startup-profile-select-vs-442x266.png" /><br/>
+<br/></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Jetbrains Rider</strong>:
+<br/></p>
+<blockquote>
+<p><img alt="startup-profile-select-rider-860x326.png" src="../../assets/img/cs/startup-profile-select-rider-860x326.png" /><br/></p>
+</blockquote>
+<ul>
+<li>On the Main Menu, <strong>add your mod to the Enabled Packages/Mods list.</strong></li>
 <li>Go into the Sub Editor and open the console.</li>
-<li>Check to see if your mod was loaded in the console.</li>
+<li>Check to see if your mod was loaded in the console.
+<br/><blockquote>
+<p><img alt="mod-plugin-running-subeditor-979x509.png" src="../../assets/img/cs/mod-plugin-running-subeditor-979x509.png" /><br/></p>
+</blockquote>
+</li>
 </ul>
 <p>If your mod loaded successfully, you are now ready to mod!</p>
 <hr />
-<h2 id="project-structure">Project Structure</h2>
+<h2 id="project-structure-and-where-to-code">Project Structure and Where to Code</h2>
+<p><strong>Your entry point/startup for your code</strong> is <code>SharedProject/SharedSource/Plugin.cs</code>.</p>
 <p>All of your mod's non-code content should be put in <code>./Assets/Content/</code>.<br/>
 All of your Client-only code should be in <code>ClientProject/ClientSource</code>.<br/>
 All of your Shared code should be in <code>SharedProject/SharedSource</code>.<br/>
 All of your Server-only code should be in <code>ServerProject/ServerSource</code>.<br/></p>
-<p>Vanilla files should be added to <code>Assets/Content/filelist.xml</code>.
-Modded LuaCs-specific registration is done via <code>Assets/Content/ModConfig.xml</code>.</p>
-<p>For more details on <code>ModConfig.xml</code> and the LuaCs API, see the <a href="">API pages</a>.</p>
+<p>Vanilla files should be added to <code>Assets/Content/filelist.xml</code> as per normal XML modding.
+Modded LuaCs-specific files is added via <code>Assets/Content/ModConfig.xml</code>.</p>
+<p>For more details on <code>ModConfig.xml</code> and the LuaCs API, see the <a href="../development/modconfig/">API pages</a>.</p>
 
 
 

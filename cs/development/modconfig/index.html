@@ -812,6 +812,7 @@
 
 
 <h1 id="modconfigxml-and-the-luacs-apis">ModConfig.xml and the LuaCs APIs</h1>
+<p>Last Updated: 2026-04-09<br/></p>
 <h3 id="overview">Overview</h3>
 <p><code>ModConfig.xml</code> (located in <code>Assets/Content/ModConfig.xml</code> in the modding template) should be in the top-level directory of your ContentPackage folder. This file is used by LuaCsForBarotrauma to declare all of your files that need to be loaded.</p>
 <p>Example:
@@ -823,8 +824,10 @@
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;Config</span><span class="w"> </span><span class="na">File=</span><span class="s">&quot;%ModDir%/Config/SettingsClient.xml&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Client&quot;</span><span class="nt">/&gt;</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">&lt;Lua</span><span class="w"> </span><span class="na">Folder=</span><span class="s">&quot;%ModDir%/Lua/Server&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Server&quot;</span><span class="w"> </span><span class="na">IsAutorun=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nt">&lt;/ModConfig&gt;</span>
-</span></code></pre></div></p>
-<p>There are four (4) types of content supported by LuaCsForBarotrauma:
+</span></code></pre></div>
+<br/></p>
+<hr />
+<p>There are four (4) types of content supported by LuaCsForBarotrauma at the time of this article:
 - <a href="">Assembly</a></p>
 <blockquote>
 <ul>
@@ -848,6 +851,7 @@
 </li>
 </ul>
 </blockquote>
+<p><br/></p>
 <hr />
 <h3 id="attribute-descriptions">Attribute Descriptions</h3>
 <p>Elements/files/content declared in a <code>ModConfig.xml</code> file support <a href="https://www.w3schools.com/xml/xml_attributes.asp">XML Attributes</a> as listed above, with the following functionality:</p>
@@ -920,7 +924,9 @@
 <li><strong>Description</strong>: Allows the ContentPackage to be loaded even if the file is missing from the location. Otherwise, missing files in <code>ModConfig.xml</code> will cause the ContentPackage to not be loaded.</li>
 </ul>
 </blockquote>
-<p>Attribute: <code>IsAutorun</code></p>
+<hr />
+<p><strong>[Lua] Only</strong>:<br/>
+Attribute: <code>IsAutorun</code></p>
 <blockquote>
 <ul>
 <li><strong>Required</strong>: No</li>
@@ -930,7 +936,9 @@
 <li><strong>Description</strong>: Specifies that the script file should be executed automatically (ie. autorun lua files).</li>
 </ul>
 </blockquote>
-<p>Attribute: <code>IsScript</code></p>
+<hr />
+<p><strong>[Assembly] Only</strong>:<br/>
+Attribute: <code>IsScript</code></p>
 <blockquote>
 <ul>
 <li><strong>Required</strong>: No</li>
