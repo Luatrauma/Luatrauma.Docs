@@ -1,18 +1,20 @@
-# Assembly (CSharp) Mod
+# Assembly (C#) Mod
 
 This type of mod creates compiled binaries/dll without code written in C#/.NET. The benefits of this workflow and mod type compared to a Lua mod are:
 
 > - Complete access to all Barotrauma functions.
 > - Better performance.
+> - Much faster loading for players.
 > - Custom game objects (ie. ItemComponents).
 > - Smart autocomplete and documentation.
 > - Hot Reload/Edit-and-Continue (edit code while it's running).
 > - Strong error checking and live debugging support.
 
 The cons are:
-> - Players must have CSharp mods enabled.
+> - Players must have C# mods enabled.
 > - More complex language.
 > - The project requires more setup.
+> - Mods may need to be recompiled every few updates (9-12 months) if there are major game changes.
 
 ## Getting Started
 
@@ -47,14 +49,39 @@ We will be using Git in the installation going forward.
 
 ### 5. Setup the Project
 - Download the [Luatrauma reference dlls](https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) zip file and extract the contents into the `/Refs/` folder in your project.
-- Open `Build.props` and go to the `User/Mod Settings` section.
+- Open `Build.props` in the main directory and go to the `User/Mod Settings` section.
 - Replace `ModDeployDir` with the path to your Barotrauma local mods, ie. `<BarotraumaGame>/LocalMods/<YourModName>/`:
 > - Note: ModDeployDir must end with a '\\'
-> - Example: "C:\Program Files\Steam\steamapps\Barotrauma\LocalMods\MyModName\\"
+> - Example: "C:\Program Files (x86)\Steam\steamapps\common\Barotrauma\LocalMods\MyModName\\"
 - Replace `AssemblyName` and `RootNamespace` with your mod's name using the following rules:
 > - No spaces
-> - No special characters (ie.  < >, \ / ;) except for periods ( . )
-> - Use English characters
+> - No special characters (ie.  < >, \ / ;). Periods (.) are allowed.
+> - Use English characters only
 - Copy the `AssemblyName` and then open `Assets/Content/ModConfig.xml`.
 - Replace `[MODASSEMBLYNAME]` with your `AssemblyName` (keep the .dll ending).
-> Tip: Use Notepad++ or other editor's 'Find and Replace' function.
+> Tip: Use Notepad++ or another editor's 'Find and Replace' function.
+- In the main directory, rename `MyModName.sln` to your mod's name.
+
+### 6. Test the Project.
+- Open the renamed `<MyModName.sln>`.
+- Build the project.
+- In the top bar, select the Launch Option / Configuration for your system (ie. `WindowsClient: Launch Barotrauma` ).
+- Go into the Sub Editor and open the console.
+- Check to see if your mod was loaded in the console.
+
+If your mod loaded successfully, you are now ready to mod!
+
+--- 
+
+## Project Structure
+
+All of your mod's non-code content should be put in `./Assets/Content/`.<br/>
+All of your Client-only code should be in `ClientProject/ClientSource`.<br/>
+All of your Shared code should be in `SharedProject/SharedSource`.<br/>
+All of your Server-only code should be in `ServerProject/ServerSource`.<br/>
+
+Vanilla files should be added to `Assets/Content/filelist.xml`.
+Modded LuaCs-specific registration is done via `Assets/Content/ModConfig.xml`.
+
+For more details on `ModConfig.xml` and the LuaCs API, see the [API pages]().
+
