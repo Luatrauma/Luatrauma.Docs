@@ -1,5 +1,6 @@
 ﻿# ModConfig.xml and the LuaCs APIs
 
+Last Updated: 2026-04-09<br/>
 ### Overview
 `ModConfig.xml` (located in `Assets/Content/ModConfig.xml` in the modding template) should be in the top-level directory of your ContentPackage folder. This file is used by LuaCsForBarotrauma to declare all of your files that need to be loaded.
 
@@ -14,9 +15,10 @@ Example:
     <Lua Folder="%ModDir%/Lua/Server" Target="Server" IsAutorun="true" />
 </ModConfig>
 ```
+<br/>
 
-
-There are four (4) types of content supported by LuaCsForBarotrauma:
+---
+There are four (4) types of content supported by LuaCsForBarotrauma at the time of this article:
 - [Assembly]()
 >  - Supported XML Attributes: 
 >    - Name, File, Folder, LoadPriority, Optional, Platform, Target, FriendlyName, IsScript, UseInternalAccessName, IsReferenceModeOnly, IsFileRequired.
@@ -31,6 +33,7 @@ There are four (4) types of content supported by LuaCsForBarotrauma:
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.
 
+<br/>
 
 ---
 ### Attribute Descriptions
@@ -85,14 +88,16 @@ Attribute: `IsFileRequired`
 > - **Default Value**: `false`
 > - **Acceptable Values**: `true`,`false`
 > - **Description**: Allows the ContentPackage to be loaded even if the file is missing from the location. Otherwise, missing files in `ModConfig.xml` will cause the ContentPackage to not be loaded.
-
+---
+**[Lua] Only**:<br/>
 Attribute: `IsAutorun`
 > - **Required**: No
 > - **Type**: `Boolean`
 > - **Default Value**: `false`
 > - **Acceptable Values**: `true`,`false`
 > - **Description**: Specifies that the script file should be executed automatically (ie. autorun lua files).
-
+---
+**[Assembly] Only**:<br/>
 Attribute: `IsScript`
 > - **Required**: No
 > - **Type**: `Boolean`
