@@ -22,12 +22,15 @@ There are four (4) types of content supported by LuaCsForBarotrauma at the time 
 - [Assembly]()
 >  - Supported XML Attributes: 
 >    - Name, File, Folder, LoadPriority, Optional, Platform, Target, FriendlyName, IsScript, UseInternalAccessName, IsReferenceModeOnly, IsFileRequired.
+ 
 - [Config](config-service.md)
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.
-- [Lua]()
+ 
+-[Lua]()
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsAutorun, IsFileRequired.
+ 
 - [Style]()
 >  - **Supported targets**: (Client)
 >  - Supported XML Attributes:
