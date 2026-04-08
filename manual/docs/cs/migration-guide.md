@@ -23,11 +23,13 @@ Required Changes:
 In addition to the changes under `In-Memory Scripts`, you will need to do the following: 
 
 1. Download a fresh set of [Luatrauma reference dlls](https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) and place them in the `/Refs/` folder of your project.
-2. Add the following NuGet package references to your `Build.props` file (inside of the `<Project></Project>` elements:
+2. Add the following NuGet package references to your `Build.props` file (inside the `<Project></Project>` elements, separate from the `PropertyGroup`):
 ```xml
-<PackageReference Include="LightInject" Version="6.6.4" />
-<PackageReference Include="OneOf" Version="3.0.271" />
-<PackageReference Include="FluentResults" Version="3.16.0" />
+<ItemGroup>
+  <PackageReference Include="LightInject" Version="6.6.4" />
+  <PackageReference Include="OneOf" Version="3.0.271" />
+  <PackageReference Include="FluentResults" Version="3.16.0" />
+</ItemGroup>
 ```
 
 #### **Option B**:
