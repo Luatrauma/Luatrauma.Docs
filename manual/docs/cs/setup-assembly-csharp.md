@@ -25,6 +25,7 @@ The cons are:
 
 You will need an IDE that supports `.NET 8` as a platform/SDK target. The following IDEs have been tested with the project and should work out of the box:
 > - [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
+>   - Be sure to select the C#/.NET Desktop workload.
 > - [JetBrains Rider IDE](https://www.jetbrains.com/rider/download/?section=windows)
 
 You may use another IDE but it will be up to you to fix any issues arising from it.
@@ -39,35 +40,41 @@ We will be using Git in the installation going forward.
 
 - Create/Log in to your Github account and then go to [LuaCsModTemplate](https://github.com/Luatrauma/LuaCsModTemplate).
 - In the top-right corner, click `Use this Template`.
+- Select `Create New Repository`. 
 - Name the repository the name of your mod.
 <br/>
 > ![github-use-template-1191x628.png](../assets/img/cs/github-use-template-1191x628.png)<br/>
 
 ### 4. Clone/Create Local Mod Copy
 - In your new github repo, select the green `<> Code` button and copy the HTTPS repo link.
-- Go to the directory on your PC where you want to store the project.
-<br/>
+  <br/>
 >![github-clone-link-450x364.png](../assets/img/cs/github-clone-link-450x364.png)<br/>
+- Go to the directory on your PC where you want to store the project.
 - Open Git Bash or CMD in that folder/directory (Google how to for your platform).
+  - Note: On Windows, you can right-click in the folder and select `Open Git Bash here`.
 - in the terminal type: `git clone <paste your repo link here>` and press enter.
-- When completed, verify that the folder matches what you see on your Github repo.
+  - Note: For Git Bash, the paste command is `Shift+Insert`. Don't ask me who decided this, I want to find them too.
+- When completed, verify that the folder contents at least contain what you see on your Github repo.
 
 ### 5. Setup the Project
 - Download the [Luatrauma reference dlls](https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) zip file and extract the contents into the `/Refs/` folder in your project.
+  - Note: Make sure that the files are in the top-level directory of `/Refs/` and not nested inside an additional folder from the extraction.
 - Open `Build.props` in the main directory and go to the `User/Mod Settings` section.
-- Replace `ModDeployDir` with the path to your Barotrauma local mods, ie. `<BarotraumaGame>/LocalMods/<YourModName>/`:
+- Replace contents of the `ModDeployDir` element with the path to your Barotrauma local mods, ie. `<BarotraumaGame>/LocalMods/<YourModName>/`:
 > - Note: ModDeployDir must end with a '\\'
 > - Example: "C:\Program Files (x86)\Steam\steamapps\common\Barotrauma\LocalMods\MyModName\\"
-- Replace `AssemblyName` and `RootNamespace` with your mod's name using the following rules:
-> - No spaces
+- Replace the contents of `AssemblyName` and `RootNamespace` with your mod's name using the following rules:
+> - No spaces.
 > - No special characters (ie.  < >, \ / ;). Periods (.) are allowed.
-> - Use English characters only
+> - Use English characters only.
+> - Must start with a letter.
 <br/>
 > <br/>![build-props-1245x886.png](../assets/img/cs/build-props-1245x886.png)<br/>
 
 - Copy the `AssemblyName` and then open `Assets/Content/ModConfig.xml`.
 - Replace `[MODASSEMBLYNAME]` with your `AssemblyName` (keep the .dll ending).
-> Tip: Use Notepad++ or another editor's 'Find and Replace' function.
+> Tip: Use your IDE, Notepad++ or another editor's 'Find and Replace' function to quickly do this.
+- Open `Assets/Content/filelist.xml` and change the mod name to your mod's name.
 
 <br/>![mod-config-modassemblyname-1033x408.png](../assets/img/cs/mod-config-modassemblyname-1033x408.png)<br/>
 - In the main directory, rename `MyModName.sln` to your mod's name.
@@ -76,6 +83,7 @@ We will be using Git in the installation going forward.
 - Open the renamed `<MyModName.sln>`.
 - Build the project.
 - In the top bar, select the Startup Project, then Launch Option / Configuration for your system (ie. `WindowsClient: Launch Barotrauma` ).
+- Launch Barotrauma.
 <br/>
 <br/>
 **Visual Studio**:
@@ -88,7 +96,7 @@ We will be using Git in the installation going forward.
 > ![startup-profile-select-rider-860x326.png](../assets/img/cs/startup-profile-select-rider-860x326.png)<br/>
 
 - On the Main Menu, **add your mod to the Enabled Packages/Mods list.**
-- Go into the Sub Editor and open the console.
+- Go into the Sub Editor and open the console (F3).
 - Check to see if your mod was loaded in the console.
 <br/>
 > ![mod-plugin-running-subeditor-979x509.png](../assets/img/cs/mod-plugin-running-subeditor-979x509.png)<br/>
