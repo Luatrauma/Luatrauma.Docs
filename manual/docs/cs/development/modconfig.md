@@ -27,7 +27,7 @@ There are four (4) types of content supported by LuaCsForBarotrauma at the time 
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.
  
--[Lua]()
+- [Lua]()
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsAutorun, IsFileRequired.
  
@@ -35,7 +35,7 @@ There are four (4) types of content supported by LuaCsForBarotrauma at the time 
 >  - **Supported targets**: (Client)
 >  - Supported XML Attributes:
 >      - Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.
-
+ 
 <br/>
 
 ---

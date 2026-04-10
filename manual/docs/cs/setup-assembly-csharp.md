@@ -1,6 +1,7 @@
+Last Updated: 2026-04-09<br/>
+
 # Assembly (C#) Mod
 
-Last Updated: 2026-04-09<br/>
 This type of mod creates compiled binaries/dll without code written in C#/.NET. The benefits of this workflow and mod type compared to a Lua mod are:
 
 > - Complete access to all Barotrauma functions.
