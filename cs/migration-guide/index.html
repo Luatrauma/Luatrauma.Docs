@@ -1056,8 +1056,9 @@
 
 <p>Last Changed: 2026-04-09</p>
 <h1 id="migration-guide-for-mods">Migration Guide for Mods</h1>
-<p>This is the Migration Guide for mods created before the LuaCsForBarotrauma refactor in the Spring Update, 2026. New mods should make use of the <a href="../setup-assembly-csharp/">Assembly C# Tutorial</a></p>
+<p>This is the minimum work required Migration Guide for mods created before the LuaCsForBarotrauma refactor in the Spring Update, 2026. New mods or mods willing to completely migrate should make use of the <a href="../setup-assembly-csharp/">Assembly C# Tutorial</a></p>
 <h3 id="c-mods-in-memory-scripts">C# Mods (In-Memory Scripts)</h3>
+<p>Important Note: There is a legacy loading system built-in if your project follows the old structure (Lua files are in <code>Lua/...</code>, Csharp files are in <code>CSharp/...</code>, binary assemblies are in <code>bin/&lt;(Client|Server)&gt;/...</code>, etc.). If you wish to deviate from this, you will need to create a <a href="../development/modconfig/">ModConfig.xml</a> as per the API.</p>
 <p>There are generally only four (4) text changes that need to be made for immediate compatibility. </p>
 <p>Required Changes:
 <br/>
