@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configuration-specifications" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -747,6 +752,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Config Service - Specifications
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -764,6 +789,64 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xml-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XML Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        === Common Attributes ===
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        === Setting Types ===
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -886,6 +969,55 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#xml-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XML Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XML Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        === Common Attributes ===
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        === Setting Types ===
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -902,15 +1034,117 @@
 
 
 
-  <h1>Config Service - Specifications</h1>
+<h1 id="configuration-specifications">Configuration Specifications</h1>
+<p>This page contains the specifications and definitions for the configuration service. Examples on usages and how to get started can be found <a href="../config-service/">here</a>.</p>
+<p><br/></p>
+<hr />
+<h3 id="xml-configuration">XML Configuration</h3>
+<p>Sample Declaration:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cm">&lt;!-- ContentPackage Name=&quot;SampleSettings&quot; --&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">&lt;Configuration&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&lt;Settings&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">&lt;Setting</span><span class="w"> </span><span class="na">Name=</span><span class="s">&quot;Setting1Name&quot;</span><span class="w"> </span><span class="na">Type=</span><span class="s">&quot;bool&quot;</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;/Settings&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">&lt;/Configuration&gt;</span>
+</span></code></pre></div></p>
+<p><br/> </p>
+<hr />
+<h4 id="common-attributes">=== Common Attributes ===</h4>
+<p>Attribute: <code>Name</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: Yes</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Acceptable Values</strong>: Alphanumeric characters, must start with a letter. An XML safe string is recommended.</li>
+<li><strong>Description</strong>: This is the name of the resource <i>unique to the ContentPackage (or empty).</i> It is used in most APIs when accessing a resource.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>Type</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: Yes</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Acceptable Values</strong>: One of the strings specified in the '<em>Setting Types</em>' section below.</li>
+<li><strong>Description</strong>: This is the type of setting to create.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>Value</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: Yes</li>
+<li><strong>Type</strong>: <code>typeof(Attribute.Type)</code></li>
+<li><strong>Default Value</strong>: <code>default(T)</code> (of Type)</li>
+<li><strong>Acceptable Values</strong>: string representation of the underlying type, as compatible with IConvertible.</li>
+<li><strong>Description</strong>: This is the default value of the setting.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>ReadOnly</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code> or <code>false</code>.</li>
+<li><strong>Description</strong>: Whether the setting can be changed as runtime. When false, can only be changed by editing the XML. Note: Can be changed by loading a saved value from disk.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>AllowChangesWhileExecuting</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Default Value</strong>: <code>true</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code> or <code>false</code>.</li>
+<li><strong>Description</strong>: Whether the setting can be changed while plugin/mod code is running. Typically used to ensure that code cannot change a value, only a user can out of game.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>ShowInMenus</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Default Value</strong>: <code>true</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code> or <code>false</code>.</li>
+<li><strong>Description</strong>: Whether the setting is visible to users in the Settings Menu. If false, can still be changed from the command line via <code>cfg_setvalue</code>.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>NetSync</code></p>
+<blockquote>
+<p><strong>[Broken/Bug]</strong>
+- <strong>Required</strong>: No
+- <strong>Type</strong>: <code>Enum</code>, <code>typeof(NetSync)</code>
+- <strong>Default Value</strong>: <code>None</code>
+- <strong>Acceptable Values</strong>: <code>None</code>, <code>TwoWay</code>, <code>ServerAuthority</code>.
+- <strong>Description</strong>: The synchronization rules of the setting when in multiplayer.
+- <strong>Notes</strong>:
+  - <code>None</code>: No synchronization.
+  - <code>TwoWay</code>: Clients and the Server are synchronized. All members have authority to change the setting's value.
+  - <code>ServerAuthority</code>: Clients and the Server are synchronized. Only the server or clients with the <code>ManageSettings</code> permission can change this setting.</p>
+</blockquote>
+<hr />
+<h4 id="setting-types">=== Setting Types ===</h4>
+<blockquote>
+<p>Type: <code>bool</code></p>
+</blockquote>
+<p>TBC</p>
+<hr />
+<p>Sample Localization:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cm">&lt;!-- ContentPackage Name=&quot;SampleSettings&quot; --&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">&lt;infotexts</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;English&quot;</span><span class="w"> </span><span class="na">nowhitespace=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">translatedname=</span><span class="s">&quot;English&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="err">&lt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">&lt;/infotexts&gt;</span>
+</span></code></pre></div></p>
 
-<p>I'll get it done by the weekend, I promise (2026-04-18). It's gonna be lit.</p>
 
 
 
 
 
 
+  
+  
 
 
 
