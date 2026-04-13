@@ -849,6 +849,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#config-service-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config Service API
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1027,6 +1038,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#config-service-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Config Service API
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1149,6 +1171,7 @@ Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, S
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/* C# */</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ISettingBase</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingBase</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">SaveConfigValue</span><span class="p">(</span><span class="n">myVar</span><span class="p">);</span>
 </span></code></pre></div>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Lua</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
@@ -1179,6 +1202,7 @@ Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, S
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cm">/* C# */</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">ISettingList</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingList</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">SaveConfigValue</span><span class="p">(</span><span class="n">myVar</span><span class="p">);</span>
 </span></code></pre></div>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">-- Lua</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
@@ -1200,6 +1224,7 @@ Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, S
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cm">/* C# */</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">ISettingRangeBase</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingRangeBase</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">SaveConfigValue</span><span class="p">(</span><span class="n">myVar</span><span class="p">);</span>
 </span></code></pre></div>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">-- Lua</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
@@ -1245,6 +1270,10 @@ Tooltip Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</
 </span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.OptionB.DisplayName&gt;</span>Always<span class="w"> </span>B<span class="nt">&lt;/SampleSettings.SampleBool.OptionB.DisplayName&gt;</span>
 </span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="nt">&lt;/infotexts&gt;</span>
 </span></code></pre></div></p>
+<hr />
+<h3 id="config-service-api">Config Service API</h3>
+<p>TBC, for now see <a href="https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Interfaces/IConfigService.cs">IConfigService</a> and <a href="https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Lua/ILuaConfigService.cs">ILuaConfigService</a> for the APIs available (C# uses both via/from <code>IConfigService</code>, Lua can only access the <code>ILuaConfigService</code> API).</p>
+<p>For the ISetting itself, see <a href="https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/Data/ISettingTypeDef.cs">ISetting Type Definitions</a>.</p>
 
 
 
