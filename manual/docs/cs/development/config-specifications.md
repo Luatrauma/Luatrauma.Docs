@@ -96,6 +96,7 @@ Sample Usage:
 /* C# */
 ISettingBase<bool> myVar;
 ConfigService.TryGetConfig<ISettingBase<bool>>(mypackage, "Sample", out myVar);
+ConfigService.SaveConfigValue(myVar);
 ``` 
 ```lua
 -- Lua
@@ -129,6 +130,7 @@ Sample Usage:
 /* C# */
 ISettingList<string> myVar;
 ConfigService.TryGetConfig<ISettingList<string>>(mypackage, "Sample", out myVar);
+ConfigService.SaveConfigValue(myVar);
 ```
 ```lua
 -- Lua
@@ -153,6 +155,7 @@ Sample Usage:
 /* C# */
 ISettingRangeBase<float> myVar;
 ConfigService.TryGetConfig<ISettingRangeBase<float>>(mypackage, "Sample", out myVar);
+ConfigService.SaveConfigValue(myVar);
 ``` 
 ```lua
 -- Lua
@@ -209,3 +212,5 @@ Tooltip Element Format: "`{XmlSafePackageName}`.`{SettingName}`.Tooltip" <br/>
 ### Config Service API
 
 TBC, for now see [IConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Interfaces/IConfigService.cs) and [ILuaConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Lua/ILuaConfigService.cs) for the APIs available (C# uses both via/from `IConfigService`, Lua can only access the `ILuaConfigService` API).
+
+For the ISetting itself, see [ISetting Type Definitions](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/Data/ISettingTypeDef.cs).
