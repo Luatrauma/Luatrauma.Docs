@@ -23,13 +23,13 @@ Sample Declaration:
 <br/> 
 
 --- 
-#### === Common Attributes === 
+### === Common Attributes === 
 
 Attribute: `Name`
 > - **Required**: Yes
 > - **Type**: `String`
-> - **Acceptable Values**: Alphanumeric characters, must start with a letter. An XML safe string is recommended.
-> - **Description**: This is the name of the resource <i>unique to the ContentPackage (or empty).</i> It is used in most APIs when accessing a resource.
+> - **Acceptable Values**: Alphanumeric characters, must start with a letter. Must be XML Element name compliant.
+> - **Description**: This is the name of the resource <i>unique to the ContentPackage.</i> This is used when trying to retrieve the setting in code.
 
 Attribute: `Type`
 > - **Required**: Yes
@@ -78,18 +78,128 @@ Attribute: `NetSync`
 >   - `ServerAuthority`: Clients and the Server are synchronized. Only the server or clients with the `ManageSettings` permission can change this setting.
 
 ---
-#### === Setting Types ===
+### === Setting Types ===
+ 
+---
+Type: `ISettingBase<T>`
+> Supported Types (Code/T): `bool`,`byte`,`sbyte`,`ushort`,`short`,`uint`,`int,`,`ulong`,`long`,`float`,`double`,`string`.<br/>
+> `Type` Names (XML): `bool`,`byte`,`sbyte`,`ushort`,`short`,`uint`,`int,`,`ulong`,`long`,`float`,`double`,`string`.<br/>
+> Required Attributes: Name, Type, Value. <br/>
+> Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/>
 
-> Type: `bool`
+Sample Usage:
+```xml
+<!-- Settings.xml -->
+<Setting Name="Sample" Type="bool" Value="true" />
+``` 
+```csharp
+/* C# */
+ISettingBase<bool> myVar;
+ConfigService.TryGetConfig<ISettingBase<bool>>(mypackage, "Sample", out myVar);
+``` 
+```lua
+-- Lua
+local success, myPackage = trygetpackage("SamplePackage")
+local success2, var = ConfigService.TryGetConfig(SettingBase.Bool, myPackage, "Sample")
+``` 
+ 
+---
+Type: `ISettingList<T>`
+> Supported Types (Code/T): `bool`,`byte`,`sbyte`,`ushort`,`short`,`uint`,`int,`,`ulong`,`long`,`float`,`double`,`string`.<br/> 
+> `Type` Names (XML): `listBool`,`listByte`,`listSbyte`,`listUshort`,`listShort`,`listUint`,`listInt,`,`listUlong`,`listLong`,`listFloat`,`listDouble`,`listString`.<br/> 
+> Required Attributes: Name, Type, Value. <br/> 
+> Required Child Elements: `Values` <br/> 
+> Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/> 
+ 
+Sample Usage:
+```xml
+<!-- Settings.xml -->
+<!-- Note: 'Value' attribute value must be present in values list. -->
+<Setting Name="Sample" Type="listString" Value="help">
+    <Values>
+        <!-- Note: Values should be XML safe if localization support is used (optional) -->
+        <Value Value="Option A"/>
+        <Value Value="Option B"/>
+        <Value Value="help"/>
+        <Value Value="Option D"/>
+    </Values>
+</Setting>
+```
+```csharp
+/* C# */
+ISettingList<string> myVar;
+ConfigService.TryGetConfig<ISettingList<string>>(mypackage, "Sample", out myVar);
+```
+```lua
+-- Lua
+local success, myPackage = trygetpackage("SamplePackage")
+local success2, var = ConfigService.TryGetConfig(SettingList.String, myPackage, "Sample")
+```
+ 
+--- 
+**Type**: `ISettingRangeBase<T>`
+> Supported Types (Code/T): `int,`,`float`.<br/> 
+> `Type` Names (XML): `rangeInt,`,`rangeFloat`.<br/>
+> Required Attributes: Name, Type, Value, Min, Max, Steps. <br/>
+> Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/>
 
-TBC
+Sample Usage:
+```xml
+<!-- Settings.xml -->
+<!-- Steps calculation = [(Max - Min)/Increment] + 1 -->
+<Setting Name="Sample" Type="rangeFloat" Value="2.5" Min="0" Max="10" Steps="21"/>
+``` 
+```csharp
+/* C# */
+ISettingRangeBase<float> myVar;
+ConfigService.TryGetConfig<ISettingRangeBase<float>>(mypackage, "Sample", out myVar);
+``` 
+```lua
+-- Lua
+local success, myPackage = trygetpackage("SamplePackage")
+local success2, var = ConfigService.TryGetConfig(SettingRangeBase.Single, myPackage, "Sample")
+``` 
+ 
+---
+### Localization
+
+All localization makes use of vanilla Barotrauma's `infotexts` function. 
 
 ---
 Sample Localization:
+> Applies To: `ISettingBase<T>`, `ISettingRangeBase<T>`
+
+Display Name Element Format: "`{XmlSafePackageName}`.`{SettingName}`.DisplayName" <br/>
+Display Category Element Format: "`{XmlSafePackageName}`.`{SettingName}`.DisplayCategory" <br/>
+Tooltip Element Format: "`{XmlSafePackageName}`.`{SettingName}`.Tooltip" <br/>
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- ContentPackage Name="SampleSettings" -->
 <infotexts language="English" nowhitespace="false" translatedname="English">
-    <
+    <SampleSettings.SampleBool.DisplayName>Sample Display Name</SampleSettings.SampleBool.DisplayName>
+    <SampleSettings.SampleBool.DisplayCategory>Samples</SampleSettings.SampleBool.DisplayCategory>
+    <SampleSettings.SampleBool.Tooltip>This is a sample</SampleSettings.SampleBool.Tooltip>
+</infotexts>
+```
+ 
+--- 
+Sample Localization:
+> Applies To: `ISettingList<T>`.
+
+Display Name Element Format: "`{XmlSafePackageName}`.`{SettingName}`.DisplayName" <br/> 
+Display Value Name Element Format: "`{XmlSafePackageName}`.`{SettingName}`.`{OptionName}`.DisplayName" <br/> 
+Display Category Element Format: "`{XmlSafePackageName}`.`{SettingName}`.DisplayCategory" <br/> 
+Tooltip Element Format: "`{XmlSafePackageName}`.`{SettingName}`.Tooltip" <br/> 
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Sample list values: OptionA, OptionB -->
+<!-- ContentPackage Name="SampleSettings" -->
+<infotexts language="English" nowhitespace="false" translatedname="English">
+    <SampleSettings.SampleBool.DisplayName>Sample Display Name</SampleSettings.SampleBool.DisplayName>
+    <SampleSettings.SampleBool.DisplayCategory>Samples</SampleSettings.SampleBool.DisplayCategory>
+    <SampleSettings.SampleBool.Tooltip>This is a sample</SampleSettings.SampleBool.Tooltip>
+    <!-- Optional "Option" Values Localization -->
+    <SampleSettings.SampleBool.OptionA.DisplayName>Is A</SampleSettings.SampleBool.OptionA.DisplayName>
+    <SampleSettings.SampleBool.OptionB.DisplayName>Always B</SampleSettings.SampleBool.OptionB.DisplayName>
 </infotexts>
 ```
