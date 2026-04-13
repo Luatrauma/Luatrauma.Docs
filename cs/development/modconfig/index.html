@@ -1001,7 +1001,7 @@
 
 
 <h1 id="modconfigxml-and-the-luacs-apis">ModConfig.xml and the LuaCs APIs</h1>
-<p>Last Updated: 2026-04-09<br/></p>
+<p>Last Updated: 2026-04-13<br/></p>
 <h3 id="overview">Overview</h3>
 <p><code>ModConfig.xml</code> (located in <code>Assets/Content/ModConfig.xml</code> in the modding template) should be in the top-level directory of your ContentPackage folder. This file is used by LuaCsForBarotrauma to declare all of your files that need to be loaded.</p>
 <p>Example:
@@ -1143,6 +1143,16 @@ Attribute: <code>IsAutorun</code></p>
 <li><strong>Default Value</strong>: <code>false</code></li>
 <li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
 <li><strong>Description</strong>: Specifies that the script file should be executed automatically (ie. autorun lua files).</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>RunUnrestricted</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Specifies that the script file should be executed without Sandboxing and unrestricted. </li>
 </ul>
 </blockquote>
 <hr />
