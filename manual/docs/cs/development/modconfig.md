@@ -18,7 +18,8 @@ Example:
 <br/>
 
 ---
-There are four (4) types of content supported by LuaCsForBarotrauma at the time of this article:
+There are four (4) types of content supported by LuaCsForBarotrauma at the time of this article: <br/>
+
 - [Assembly]()
 >  - Supported XML Attributes: 
 >    - Name, File, Folder, LoadPriority, Optional, Platform, Target, FriendlyName, IsScript, UseInternalAccessName, IsReferenceModeOnly, IsFileRequired.
