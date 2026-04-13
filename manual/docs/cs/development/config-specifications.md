@@ -203,3 +203,9 @@ Tooltip Element Format: "`{XmlSafePackageName}`.`{SettingName}`.Tooltip" <br/>
     <SampleSettings.SampleBool.OptionB.DisplayName>Always B</SampleSettings.SampleBool.OptionB.DisplayName>
 </infotexts>
 ```
+ 
+--- 
+
+### Config Service API
+
+TBC, for now see [IConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Interfaces/IConfigService.cs) and [ILuaConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Lua/ILuaConfigService.cs) for the APIs available (C# uses both via/from `IConfigService`, Lua can only access the `ILuaConfigService` API).
