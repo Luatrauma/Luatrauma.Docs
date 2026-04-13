@@ -814,10 +814,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="XML Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#common-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -827,8 +826,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#setting-types" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -838,9 +837,15 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Localization
+      
+    </span>
+  </a>
   
 </li>
       
@@ -987,10 +992,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="XML Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#common-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1000,8 +1004,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#setting-types" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1011,9 +1015,15 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#localization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Localization
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1050,14 +1060,14 @@
 </span></code></pre></div></p>
 <p><br/> </p>
 <hr />
-<h4 id="common-attributes">=== Common Attributes ===</h4>
+<h3 id="common-attributes">=== Common Attributes ===</h3>
 <p>Attribute: <code>Name</code></p>
 <blockquote>
 <ul>
 <li><strong>Required</strong>: Yes</li>
 <li><strong>Type</strong>: <code>String</code></li>
-<li><strong>Acceptable Values</strong>: Alphanumeric characters, must start with a letter. An XML safe string is recommended.</li>
-<li><strong>Description</strong>: This is the name of the resource <i>unique to the ContentPackage (or empty).</i> It is used in most APIs when accessing a resource.</li>
+<li><strong>Acceptable Values</strong>: Alphanumeric characters, must start with a letter. Must be XML Element name compliant.</li>
+<li><strong>Description</strong>: This is the name of the resource <i>unique to the ContentPackage.</i> This is used when trying to retrieve the setting in code.</li>
 </ul>
 </blockquote>
 <p>Attribute: <code>Type</code></p>
@@ -1123,18 +1133,117 @@
   - <code>ServerAuthority</code>: Clients and the Server are synchronized. Only the server or clients with the <code>ManageSettings</code> permission can change this setting.</p>
 </blockquote>
 <hr />
-<h4 id="setting-types">=== Setting Types ===</h4>
-<blockquote>
-<p>Type: <code>bool</code></p>
-</blockquote>
-<p>TBC</p>
+<h3 id="setting-types">=== Setting Types ===</h3>
 <hr />
-<p>Sample Localization:
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cm">&lt;!-- ContentPackage Name=&quot;SampleSettings&quot; --&gt;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">&lt;infotexts</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;English&quot;</span><span class="w"> </span><span class="na">nowhitespace=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">translatedname=</span><span class="s">&quot;English&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="err">&lt;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">&lt;/infotexts&gt;</span>
+<p>Type: <code>ISettingBase&lt;T&gt;</code></p>
+<blockquote>
+<p>Supported Types (Code/T): <code>bool</code>,<code>byte</code>,<code>sbyte</code>,<code>ushort</code>,<code>short</code>,<code>uint</code>,<code>int,</code>,<code>ulong</code>,<code>long</code>,<code>float</code>,<code>double</code>,<code>string</code>.<br/>
+<code>Type</code> Names (XML): <code>bool</code>,<code>byte</code>,<code>sbyte</code>,<code>ushort</code>,<code>short</code>,<code>uint</code>,<code>int,</code>,<code>ulong</code>,<code>long</code>,<code>float</code>,<code>double</code>,<code>string</code>.<br/>
+Required Attributes: Name, Type, Value. <br/>
+Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/></p>
+</blockquote>
+<p>Sample Usage:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cm">&lt;!-- Settings.xml --&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">&lt;Setting</span><span class="w"> </span><span class="na">Name=</span><span class="s">&quot;Sample&quot;</span><span class="w"> </span><span class="na">Type=</span><span class="s">&quot;bool&quot;</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span></code></pre></div>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/* C# */</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">ISettingBase</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingBase</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Lua</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">local</span> <span class="n">success2</span><span class="p">,</span> <span class="n">var</span> <span class="o">=</span> <span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="p">(</span><span class="n">SettingBase</span><span class="p">.</span><span class="n">Bool</span><span class="p">,</span> <span class="n">myPackage</span><span class="p">,</span> <span class="s2">&quot;Sample&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<hr />
+<p>Type: <code>ISettingList&lt;T&gt;</code></p>
+<blockquote>
+<p>Supported Types (Code/T): <code>bool</code>,<code>byte</code>,<code>sbyte</code>,<code>ushort</code>,<code>short</code>,<code>uint</code>,<code>int,</code>,<code>ulong</code>,<code>long</code>,<code>float</code>,<code>double</code>,<code>string</code>.<br/> 
+<code>Type</code> Names (XML): <code>listBool</code>,<code>listByte</code>,<code>listSbyte</code>,<code>listUshort</code>,<code>listShort</code>,<code>listUint</code>,<code>listInt,</code>,<code>listUlong</code>,<code>listLong</code>,<code>listFloat</code>,<code>listDouble</code>,<code>listString</code>.<br/> 
+Required Attributes: Name, Type, Value. <br/> 
+Required Child Elements: <code>Values</code> <br/> 
+Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/> </p>
+</blockquote>
+<p>Sample Usage:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cm">&lt;!-- Settings.xml --&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cm">&lt;!-- Note: &#39;Value&#39; attribute value must be present in values list. --&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">&lt;Setting</span><span class="w"> </span><span class="na">Name=</span><span class="s">&quot;Sample&quot;</span><span class="w"> </span><span class="na">Type=</span><span class="s">&quot;listString&quot;</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;help&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&lt;Values&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="cm">&lt;!-- Note: Values should be XML safe if localization support is used (optional) --&gt;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="nt">&lt;Value</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;Option A&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">        </span><span class="nt">&lt;Value</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;Option B&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="nt">&lt;Value</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;help&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="nt">&lt;Value</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;Option D&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="nt">&lt;/Values&gt;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nt">&lt;/Setting&gt;</span>
+</span></code></pre></div>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cm">/* C# */</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">ISettingList</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingList</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">-- Lua</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">local</span> <span class="n">success2</span><span class="p">,</span> <span class="n">var</span> <span class="o">=</span> <span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="p">(</span><span class="n">SettingList</span><span class="p">.</span><span class="n">String</span><span class="p">,</span> <span class="n">myPackage</span><span class="p">,</span> <span class="s2">&quot;Sample&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<hr />
+<p><strong>Type</strong>: <code>ISettingRangeBase&lt;T&gt;</code></p>
+<blockquote>
+<p>Supported Types (Code/T): <code>int,</code>,<code>float</code>.<br/> 
+<code>Type</code> Names (XML): <code>rangeInt,</code>,<code>rangeFloat</code>.<br/>
+Required Attributes: Name, Type, Value, Min, Max, Steps. <br/>
+Supported Attributes: Name, Type, Value, ReadOnly, AllowChangesWhileExecuting, ShowInMenus. <br/></p>
+</blockquote>
+<p>Sample Usage:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cm">&lt;!-- Settings.xml --&gt;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cm">&lt;!-- Steps calculation = [(Max - Min)/Increment] + 1 --&gt;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">&lt;Setting</span><span class="w"> </span><span class="na">Name=</span><span class="s">&quot;Sample&quot;</span><span class="w"> </span><span class="na">Type=</span><span class="s">&quot;rangeFloat&quot;</span><span class="w"> </span><span class="na">Value=</span><span class="s">&quot;2.5&quot;</span><span class="w"> </span><span class="na">Min=</span><span class="s">&quot;0&quot;</span><span class="w"> </span><span class="na">Max=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="na">Steps=</span><span class="s">&quot;21&quot;</span><span class="nt">/&gt;</span>
+</span></code></pre></div>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cm">/* C# */</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">ISettingRangeBase</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">myVar</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="o">&lt;</span><span class="n">ISettingRangeBase</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">mypackage</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Sample&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">myVar</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">-- Lua</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kd">local</span> <span class="n">success</span><span class="p">,</span> <span class="n">myPackage</span> <span class="o">=</span> <span class="n">trygetpackage</span><span class="p">(</span><span class="s2">&quot;SamplePackage&quot;</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kd">local</span> <span class="n">success2</span><span class="p">,</span> <span class="n">var</span> <span class="o">=</span> <span class="n">ConfigService</span><span class="p">.</span><span class="n">TryGetConfig</span><span class="p">(</span><span class="n">SettingRangeBase</span><span class="p">.</span><span class="n">Single</span><span class="p">,</span> <span class="n">myPackage</span><span class="p">,</span> <span class="s2">&quot;Sample&quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<hr />
+<h3 id="localization">Localization</h3>
+<p>All localization makes use of vanilla Barotrauma's <code>infotexts</code> function. </p>
+<hr />
+<p>Sample Localization:</p>
+<blockquote>
+<p>Applies To: <code>ISettingBase&lt;T&gt;</code>, <code>ISettingRangeBase&lt;T&gt;</code></p>
+</blockquote>
+<p>Display Name Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.DisplayName" <br/>
+Display Category Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.DisplayCategory" <br/>
+Tooltip Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.Tooltip" <br/>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="cm">&lt;!-- ContentPackage Name=&quot;SampleSettings&quot; --&gt;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nt">&lt;infotexts</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;English&quot;</span><span class="w"> </span><span class="na">nowhitespace=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">translatedname=</span><span class="s">&quot;English&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.DisplayName&gt;</span>Sample<span class="w"> </span>Display<span class="w"> </span>Name<span class="nt">&lt;/SampleSettings.SampleBool.DisplayName&gt;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.DisplayCategory&gt;</span>Samples<span class="nt">&lt;/SampleSettings.SampleBool.DisplayCategory&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.Tooltip&gt;</span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sample<span class="nt">&lt;/SampleSettings.SampleBool.Tooltip&gt;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nt">&lt;/infotexts&gt;</span>
+</span></code></pre></div></p>
+<hr />
+<p>Sample Localization:</p>
+<blockquote>
+<p>Applies To: <code>ISettingList&lt;T&gt;</code>.</p>
+</blockquote>
+<p>Display Name Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.DisplayName" <br/> 
+Display Value Name Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.<code>{OptionName}</code>.DisplayName" <br/> 
+Display Category Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.DisplayCategory" <br/> 
+Tooltip Element Format: "<code>{XmlSafePackageName}</code>.<code>{SettingName}</code>.Tooltip" <br/> 
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="cm">&lt;!--Sample list values: OptionA, OptionB --&gt;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="cm">&lt;!-- ContentPackage Name=&quot;SampleSettings&quot; --&gt;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nt">&lt;infotexts</span><span class="w"> </span><span class="na">language=</span><span class="s">&quot;English&quot;</span><span class="w"> </span><span class="na">nowhitespace=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">translatedname=</span><span class="s">&quot;English&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.DisplayName&gt;</span>Sample<span class="w"> </span>Display<span class="w"> </span>Name<span class="nt">&lt;/SampleSettings.SampleBool.DisplayName&gt;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.DisplayCategory&gt;</span>Samples<span class="nt">&lt;/SampleSettings.SampleBool.DisplayCategory&gt;</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.Tooltip&gt;</span>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>sample<span class="nt">&lt;/SampleSettings.SampleBool.Tooltip&gt;</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="cm">&lt;!-- Optional &quot;Option&quot; Values Localization --&gt;</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.OptionA.DisplayName&gt;</span>Is<span class="w"> </span>A<span class="nt">&lt;/SampleSettings.SampleBool.OptionA.DisplayName&gt;</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nt">&lt;SampleSettings.SampleBool.OptionB.DisplayName&gt;</span>Always<span class="w"> </span>B<span class="nt">&lt;/SampleSettings.SampleBool.OptionB.DisplayName&gt;</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="nt">&lt;/infotexts&gt;</span>
 </span></code></pre></div></p>
 
 
