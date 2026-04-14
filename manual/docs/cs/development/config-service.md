@@ -98,6 +98,8 @@ Full details on this can be found in the [Specifications](config-specifications.
 
 > Verification: Before continuing, go into the game, with your mod enabled in the mods list, and ensure that your settings above are displaying in the Settings Menu under the `ModGameplaySettings` menu.
 
+More examples can be found on the [Specifications](config-specifications.md) page.
+
 Example (C#):
 ```csharp
 public partial class Plugin : IAssemblyPlugin
