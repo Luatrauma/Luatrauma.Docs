@@ -94,14 +94,32 @@ Sample Usage:
 ``` 
 ```csharp
 /* C# */
+// class vars
+public ILoggerService Logger { get; set; }
+public IConfigService ConfigService { get; set; }
 ISettingBase<bool> myVar;
+
+// Initialize()
 ConfigService.TryGetConfig<ISettingBase<bool>>(mypackage, "Sample", out myVar);
-ConfigService.SaveConfigValue(myVar);
+myVar.OnValueChanged += (cfg) => 
+{
+    Logger.Log($"Value Set for {myVar.InternalName} at {myVar.Value}");
+};
+myVar.TrySetValue(true); // set in memory
+ConfigService.SaveConfigValue(myVar); // save to disk
 ``` 
 ```lua
 -- Lua
+function onValueChanged(cfg)
+    print("New value set: ", cfg.Value)
+end
+
 local success, myPackage = trygetpackage("SamplePackage")
 local success2, var = ConfigService.TryGetConfig(SettingBase.Bool, myPackage, "Sample")
+
+if success2 then
+    var.OnValueChanged.add(onValueChanged)
+end 
 ``` 
  
 ---
@@ -128,14 +146,37 @@ Sample Usage:
 ```
 ```csharp
 /* C# */
+// class vars
+public ILoggerService Logger { get; set; }
+public IConfigService ConfigService { get; set; }
 ISettingList<string> myVar;
-ConfigService.TryGetConfig<ISettingList<string>>(mypackage, "Sample", out myVar);
-ConfigService.SaveConfigValue(myVar);
+
+// Initialize()
+ConfigService.TryGetConfig<ISettingBase<string>>(mypackage, "Sample", out myVar);
+myVar.OnValueChanged += (cfg) => 
+{
+    Logger.Log($"Value Set for {myVar.InternalName} at {myVar.Value}");
+};
+foreach (string option in myVar.Options)
+{
+    Logger.Log($"Possible option: {option}");
+}
+    
+myVar.TrySetValue("Option A");  // set in memory
+ConfigService.SaveConfigValue(myVar); // save to disk
 ```
 ```lua
 -- Lua
+function onValueChanged(cfg)
+    print("New value set: ", cfg.Value)
+end
+
 local success, myPackage = trygetpackage("SamplePackage")
-local success2, var = ConfigService.TryGetConfig(SettingList.String, myPackage, "Sample")
+local success2, var = ConfigService.TryGetConfig(SettingBase.Bool, myPackage, "Sample")
+
+if success2 then
+    var.OnValueChanged.add(onValueChanged)
+end 
 ```
  
 --- 
@@ -153,14 +194,33 @@ Sample Usage:
 ``` 
 ```csharp
 /* C# */
+// class vars
+public ILoggerService Logger { get; set; }
+public IConfigService ConfigService { get; set; }
 ISettingRangeBase<float> myVar;
+
+// Initialize()
 ConfigService.TryGetConfig<ISettingRangeBase<float>>(mypackage, "Sample", out myVar);
+myVar.OnValueChanged += (cfg) => 
+{
+    Logger.Log($"Value Set for {myVar.InternalName} at {myVar.Value}");
+    Logger.Log($"MinValue Set for {myVar.InternalName} at {myVar.MinValue}");
+    Logger.Log($"MaxValue Set for {myVar.InternalName} at {myVar.MaxValue}");
+};
 ConfigService.SaveConfigValue(myVar);
 ``` 
 ```lua
 -- Lua
+function onValueChanged(cfg)
+    print("New value set: ", cfg.Value)
+end
+
 local success, myPackage = trygetpackage("SamplePackage")
-local success2, var = ConfigService.TryGetConfig(SettingRangeBase.Single, myPackage, "Sample")
+local success2, var = ConfigService.TryGetConfig(SettingBase.Bool, myPackage, "Sample")
+
+if success2 then
+    var.OnValueChanged.add(onValueChanged)
+end 
 ``` 
  
 ---
@@ -213,4 +273,4 @@ Tooltip Element Format: "`{XmlSafePackageName}`.`{SettingName}`.Tooltip" <br/>
 
 TBC, for now see [IConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Interfaces/IConfigService.cs) and [ILuaConfigService](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/_Services/_Lua/ILuaConfigService.cs) for the APIs available (C# uses both via/from `IConfigService`, Lua can only access the `ILuaConfigService` API).
 
-For the ISetting itself, see [ISetting Type Definitions](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/Data/ISettingTypeDef.cs).
+For the `ISetting[Type]` variable interface itself, see [ISetting Type Definitions](https://github.com/evilfactory/LuaCsForBarotrauma/blob/master/Barotrauma/BarotraumaShared/SharedSource/LuaCs/Data/ISettingTypeDef.cs).
