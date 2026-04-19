@@ -16,7 +16,7 @@ The mod can be automatically installed and kept up to date via a special steam l
 
 5. Enter the following code into the text box:
 
-**Windows**: ```cmd /c "curl -L -z Luatrauma.AutoUpdater.win-x64.exe -o Luatrauma.AutoUpdater.win-x64.exe https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.win-x64.exe && start /b Luatrauma.AutoUpdater.win-x64.exe %COMMAND%"```
+**Windows**: ```cmd /c "C:\Windows\System32\curl.exe -L -o Luatrauma.AutoUpdater.win-x64.exe https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.win-x64.exe && start /b Luatrauma.AutoUpdater.win-x64.exe %COMMAND%"```
 
 **Linux**: ```bash -c "wget https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.linux-x64 && chmod +x Luatrauma.AutoUpdater.linux-x64 && ./Luatrauma.AutoUpdater.linux-x64 %command%"```
 

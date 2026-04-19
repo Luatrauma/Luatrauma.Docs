@@ -1,16 +1,6 @@
 # Introduction
 
-LuaCsForBarotrauma allows modifications to be wrriten in CSharp, this type of mod is very powerful and can be used to extend the game's functionality in ways that are not possible even with Lua. But it comes with a cost, CSharp mods are not sandboxed and can be used to run malicious code, so it's disabled by default and must be enabled in the LuaCs Settings menu by the user.
-
-## Enabling
-
-To enable CSharp mod loading, you will have to go to your mainmenu, click top left LuaCs Settings, and enable the `Enable CSharp` option. If you do not have CSharp enabled and you join a server that has CSharp mods, you will receive a popup asking if you want to enable it for that session.
-
-You can also enable by setting the `EnableCSharp` option in the `LuaCsConfig.xml` file found in the game root folder to `true`.
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LuaCsSetupConfig EnableCsScripting="true" TreatForcedModsAsNormal="false" PreferToUseWorkshopLuaSetup="false" DisableErrorGUIOverlay="false" HideUserNames="true" />
-```
+LuaCsForBarotrauma allows modifications to be writen in CSharp, this type of mod is very powerful and can be used to extend the game's functionality in ways that are not possible even with Lua. But it comes with a cost, CSharp mods are not sandboxed and can be used to run malicious code, so it must be explicitly allowed by the user.
 
 ## Development
 

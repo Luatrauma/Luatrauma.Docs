@@ -58,7 +58,7 @@ We will be using Git in the installation going forward.
 - When completed, verify that the folder contents at least contain what you see on your Github repo.
 
 ### 5. Setup the Project
-- Download the [Luatrauma reference dlls](https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) zip file and extract the contents into the `/Refs/` folder in your project.
+- Download the [Luatrauma reference dlls](https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) zip file and extract the contents into the `/Refs/` folder in your project.
   - Note: Make sure that the files are in the top-level directory of `/Refs/` and not nested inside an additional folder from the extraction.
 - Open `Build.props` in the main directory and go to the `User/Mod Settings` section.
 - Replace contents of the `ModDeployDir` element with the path to your Barotrauma local mods, ie. `<BarotraumaGame>/LocalMods/<YourModName>/`:
