@@ -617,17 +617,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enabling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Enabling
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#development" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -960,17 +949,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enabling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Enabling
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#development" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -999,13 +977,7 @@
 
 
 <h1 id="introduction">Introduction</h1>
-<p>LuaCsForBarotrauma allows modifications to be wrriten in CSharp, this type of mod is very powerful and can be used to extend the game's functionality in ways that are not possible even with Lua. But it comes with a cost, CSharp mods are not sandboxed and can be used to run malicious code, so it's disabled by default and must be enabled in the LuaCs Settings menu by the user.</p>
-<h2 id="enabling">Enabling</h2>
-<p>To enable CSharp mod loading, you will have to go to your mainmenu, click top left LuaCs Settings, and enable the <code>Enable CSharp</code> option. If you do not have CSharp enabled and you join a server that has CSharp mods, you will receive a popup asking if you want to enable it for that session.</p>
-<p>You can also enable by setting the <code>EnableCSharp</code> option in the <code>LuaCsConfig.xml</code> file found in the game root folder to <code>true</code>.
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">&lt;LuaCsSetupConfig</span><span class="w"> </span><span class="na">EnableCsScripting=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="na">TreatForcedModsAsNormal=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">PreferToUseWorkshopLuaSetup=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">DisableErrorGUIOverlay=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">HideUserNames=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span></code></pre></div></p>
+<p>LuaCsForBarotrauma allows modifications to be writen in CSharp, this type of mod is very powerful and can be used to extend the game's functionality in ways that are not possible even with Lua. But it comes with a cost, CSharp mods are not sandboxed and can be used to run malicious code, so it must be explicitly allowed by the user.</p>
 <h2 id="development">Development</h2>
 <p>CSharp mods can be developed in two different ways, so called <strong>In-Memory CSharp Mods</strong> and <strong>Assembly CSharp Mods</strong>. Here is a brief explanation of both:</p>
 <p><strong>In-Memory CSharp Mods</strong> are mods that have all their .cs source files stored inside the mod folder and have their code compiled at runtime. This type of mod is the easier to setup since it only requires you to have the .cs files in the mod folder, but it comes at the cost of being slower to load and not having a full development setup with debugging. You can find more information on how to setup an In-Memory CSharp mod in the <a href="../setup-in-memory-csharp/">In-Memory CSharp Mods</a> section.</p>

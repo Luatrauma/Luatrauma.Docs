@@ -1061,7 +1061,7 @@
 <p>Enter the following code into the text box:</p>
 </li>
 </ol>
-<p><strong>Windows</strong>: <code>cmd /c "curl -L -z Luatrauma.AutoUpdater.win-x64.exe -o Luatrauma.AutoUpdater.win-x64.exe https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.win-x64.exe &amp;&amp; start /b Luatrauma.AutoUpdater.win-x64.exe %COMMAND%"</code></p>
+<p><strong>Windows</strong>: <code>cmd /c "C:\Windows\System32\curl.exe -L -o Luatrauma.AutoUpdater.win-x64.exe https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.win-x64.exe &amp;&amp; start /b Luatrauma.AutoUpdater.win-x64.exe %COMMAND%"</code></p>
 <p><strong>Linux</strong>: <code>bash -c "wget https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.linux-x64 &amp;&amp; chmod +x Luatrauma.AutoUpdater.linux-x64 &amp;&amp; ./Luatrauma.AutoUpdater.linux-x64 %command%"</code></p>
 <p><strong>MacOS</strong>: <code>/bin/zsh -c "cd Barotrauma.app/Contents/MacOS &amp;&amp; /usr/bin/curl -LOR https://github.com/Luatrauma/Luatrauma.AutoUpdater/releases/download/latest/Luatrauma.AutoUpdater.osx-x64 &amp;&amp; chmod +x Luatrauma.AutoUpdater.osx-x64 &amp;&amp; ./Luatrauma.AutoUpdater.osx-x64 %command%/Contents/MacOS/Barotrauma"</code></p>
 <p>And you are done. Now every time you launch the game, the mod will be automatically installed and kept up to date. If you want to uninstall the mod, just remove the launch command and verify the integrity of the game files.</p>
