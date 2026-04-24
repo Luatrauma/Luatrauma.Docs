@@ -118,7 +118,7 @@ All of your Server-only code should be in `ServerProject/ServerSource`.<br/>
 Vanilla files should be added to `Assets/Content/filelist.xml` as per normal XML modding.
 Modded LuaCs-specific files is added via `Assets/Content/ModConfig.xml`.
 
-For more details on `ModConfig.xml` and the LuaCs API, see the [API pages](development/modconfig.md).
+For more details on `ModConfig.xml` and the LuaCs API, see the [API pages](common/development/modconfig.md).
 
 
 
