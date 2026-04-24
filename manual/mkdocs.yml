@@ -14,7 +14,7 @@ nav:
       - "Config Service - Tutorial": "common/development/config-service.md"
       - "Config Service - Specifications": "common/development/config-specifications.md"
       - "ModConfig.xml": "common/development/modconfig.md"
-      - "Migration Guide (Spring, 2026)": "common/migration-guide.md"
+    - "Migration Guide (Spring, 2026)": "common/migration-guide.md"
   - Lua:
     - "Getting Started": "lua/getting-started.md"
     - "Errors": "lua/errors.md"
