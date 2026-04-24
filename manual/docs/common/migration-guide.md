@@ -40,5 +40,14 @@ Migrate your project over to the [new template](setup-assembly-csharp.md), which
 ---
 ### Lua Scripts
 
-:barodev: Be happy that @Evil Factory loves you.
+Required Changes:
+<br/>
+1. The below code references need to be replaced with its new equivalent:
+> - "`GameMain.LuaCs`" is now "`LuaCsSetup.Instance`"
+> - "`Client.ClientList`" is now "`ModUtils.Client.ClientList`"
+> - "`Barotrauma.Networking.Client.ClientList`" is now "`ModUtils.Client.ClientList`"
+> - "`ItemPrefab.GetItemPrefab`" is now "`ModUtils.ItemPrefab.GetItemPrefab`"
 
+Important Notes:
+ 
+2. Many new APIs require your content package as an argument, such as the `ConfigService`. You will need to call `trygetpackage("your package name")` in order to retrieve it.

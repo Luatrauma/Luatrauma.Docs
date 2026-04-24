@@ -9,6 +9,12 @@ theme:
 nav:
   - Welcome: "index.md"
   - Installation: "installation.md"
+  - Common API:
+    - Development:
+      - "Config Service - Tutorial": "common/development/config-service.md"
+      - "Config Service - Specifications": "common/development/config-specifications.md"
+      - "ModConfig.xml": "common/development/modconfig.md"
+      - "Migration Guide (Spring, 2026)": "common/migration-guide.md"
   - Lua:
     - "Getting Started": "lua/getting-started.md"
     - "Errors": "lua/errors.md"
@@ -21,11 +27,7 @@ nav:
     - Introduction: "cs/introduction.md"
     - "In-Memory CSharp Mods": "cs/setup-in-memory-csharp.md"
     - "Assembly CSharp Mods": "cs/setup-assembly-csharp.md"
-    - "Migration Guide (Spring, 2026)": "cs/migration-guide.md"
     - Development:
-      - "Config Service - Tutorial": "cs/development/config-service.md"
-      - "Config Service - Specifications": "cs/development/config-specifications.md"
-      - "ModConfig.xml": "cs/development/modconfig.md"
       - "Using Harmony": "cs/development/harmony.md"
     - "API Reference": "/Luatrauma.Docs/api/cs/client/html"
 markdown_extensions:
