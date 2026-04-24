@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://luatrauma.github.io/Luatrauma.Docs/cs/development/harmony/">
+        <link rel="canonical" href="https://luatrauma.github.io/Luatrauma.Docs/common/development/modconfig/">
       
       
-        <link rel="prev" href="../../setup-assembly-csharp/">
+        <link rel="prev" href="../config-specifications/">
       
+      
+        <link rel="next" href="../../migration-guide/">
       
       
         
@@ -23,7 +25,7 @@
     
     
       
-        <title>Using Harmony - Luatrauma Docs</title>
+        <title>ModConfig.xml - Luatrauma Docs</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-harmonyx" class="md-skip">
+        <a href="#modconfigxml-and-the-luacs-apis" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Using Harmony
+              ModConfig.xml
             
           </span>
         </div>
@@ -253,18 +255,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -285,7 +289,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -300,18 +304,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -332,7 +338,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -350,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../common/development/config-service/" class="md-nav__link">
+      <a href="../config-service/" class="md-nav__link">
         
   
   
@@ -378,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../common/development/config-specifications/" class="md-nav__link">
+      <a href="../config-specifications/" class="md-nav__link">
         
   
   
@@ -403,10 +409,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../common/development/modconfig/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModConfig.xml
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -422,6 +455,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Descriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -434,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../common/migration-guide/" class="md-nav__link">
+      <a href="../../migration-guide/" class="md-nav__link">
         
   
   
@@ -724,20 +799,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -758,7 +831,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -776,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../introduction/" class="md-nav__link">
+      <a href="../../../cs/introduction/" class="md-nav__link">
         
   
   
@@ -804,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup-in-memory-csharp/" class="md-nav__link">
+      <a href="../../../cs/setup-in-memory-csharp/" class="md-nav__link">
         
   
   
@@ -832,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../setup-assembly-csharp/" class="md-nav__link">
+      <a href="../../../cs/setup-assembly-csharp/" class="md-nav__link">
         
   
   
@@ -857,20 +930,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
           <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
@@ -891,7 +962,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -906,19 +977,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../cs/development/harmony/" class="md-nav__link">
         
   
   
@@ -934,7 +996,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1003,6 +1064,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Descriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1018,9 +1109,196 @@
 
 
 
-<h1 id="using-harmonyx">Using HarmonyX</h1>
-<p>This is the main way you will be modifying the game. HarmonyX is a library that allows you to patch methods in the game's code. This allows you to change the behavior of the game without modifying the game's code directly.</p>
-<p>HarmonyX mirrors the Harmony documentation. You can find the Harmony documentation here https://harmony.pardeike.net/articles/basics.html it should explain everything you need to know about HarmonyX and how to use it.</p>
+<h1 id="modconfigxml-and-the-luacs-apis">ModConfig.xml and the LuaCs APIs</h1>
+<p>Last Updated: 2026-04-13<br/></p>
+<h3 id="overview">Overview</h3>
+<p><code>ModConfig.xml</code> (located in <code>Assets/Content/ModConfig.xml</code> in the modding template) should be in the top-level directory of your ContentPackage folder. This file is used by LuaCsForBarotrauma to declare all of your files that need to be loaded.</p>
+<p>Example:
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">&lt;ModConfig&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&lt;Assembly</span><span class="w"> </span><span class="na">Folder=</span><span class="s">&quot;%ModDir%/CSharp/Client&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Client&quot;</span><span class="w"> </span><span class="na">IsScript=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="na">UseInternalAccessName=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&lt;Assembly</span><span class="w"> </span><span class="na">File=</span><span class="s">&quot;%ModDir%/bin/Server/Windows/MyMod.dll&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Server&quot;</span><span class="w"> </span><span class="na">Platform=</span><span class="s">&quot;Windows&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&lt;Config</span><span class="w"> </span><span class="na">File=</span><span class="s">&quot;%ModDir%/Config/SettingsShared.xml&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;Config</span><span class="w"> </span><span class="na">File=</span><span class="s">&quot;%ModDir%/Config/SettingsClient.xml&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Client&quot;</span><span class="nt">/&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">&lt;Lua</span><span class="w"> </span><span class="na">Folder=</span><span class="s">&quot;%ModDir%/Lua/Server&quot;</span><span class="w"> </span><span class="na">Target=</span><span class="s">&quot;Server&quot;</span><span class="w"> </span><span class="na">IsAutorun=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nt">&lt;/ModConfig&gt;</span>
+</span></code></pre></div>
+<br/></p>
+<hr />
+<p>There are four (4) types of content supported by LuaCsForBarotrauma at the time of this article: <br/></p>
+<ul>
+<li>
+<p><a href="">Assembly</a></p>
+<blockquote>
+<ul>
+<li>Supported XML Attributes: </li>
+<li>Name, File, Folder, LoadPriority, Optional, Platform, Target, FriendlyName, IsScript, UseInternalAccessName, IsReferenceModeOnly, IsFileRequired.</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p><a href="../config-service/">Config</a></p>
+<blockquote>
+<ul>
+<li>Supported XML Attributes:<ul>
+<li>Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p><a href="">Lua</a></p>
+<blockquote>
+<ul>
+<li>Supported XML Attributes:<ul>
+<li>Name, File, Folder, LoadPriority, Optional, Platform, Target, IsAutorun, IsFileRequired.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p><a href="">Style</a></p>
+<blockquote>
+<ul>
+<li><strong>Supported targets</strong>: (Client)</li>
+<li>Supported XML Attributes:<ul>
+<li>Name, File, Folder, LoadPriority, Optional, Platform, Target, IsFileRequired.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p><br/></p>
+<hr />
+<h3 id="attribute-descriptions">Attribute Descriptions</h3>
+<p>Elements/files/content declared in a <code>ModConfig.xml</code> file support <a href="https://www.w3schools.com/xml/xml_attributes.asp">XML Attributes</a> as listed above, with the following functionality:</p>
+<p>Attribute: <code>Name</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Default Value</strong>: <code>string.Empty</code></li>
+<li><strong>Acceptable Values</strong>: Alphanumeric characters.</li>
+<li><strong>Description</strong>: This is the name of the resource <i>unique to the ContentPackage (or empty).</i> It is used in most APIs when accessing a resource.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>File</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: Yes* </li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Acceptable Values</strong>: Valid path to a file.</li>
+<li><strong>Description</strong>: Specifies the filepath to be loaded. Can be either a relative filepath by starting with <code>%ModDir%</code>, or an absolute path to a file.</li>
+<li><strong>Notes</strong>: *This attribute and/or the <code>Folder</code> attribute are required on a resource. You can use one or both.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>Folder</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: Yes*</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Acceptable Values</strong>: Valid path to a folder.</li>
+<li><strong>Description</strong>: Specifies the folder to be loaded. Can be either a relative folder path by starting with <code>%ModDir%</code>, or an absolute path to a folder. All files in the folder and subfolders will be added if they match the required filetypes.</li>
+<li><strong>Notes</strong>: *This attribute and/or the <code>File</code> attribute are required on a resource. You can use one or both.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>Platform</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Default Value</strong>: <code>Any</code></li>
+<li><strong>Acceptable Values</strong>: <code>Linux</code>,<code>OSX</code>,<code>Windows</code>,<code>Any</code></li>
+<li><strong>Description</strong>: Specifies the platform that this file should be loaded on.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>Target</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>String</code></li>
+<li><strong>Default Value</strong>: <code>Any</code></li>
+<li><strong>Acceptable Values</strong>: <code>Client</code>,<code>Server</code>,<code>Any</code></li>
+<li><strong>Description</strong>: Specifies the target that this file should be loaded on.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>LoadPriority</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Int32</code></li>
+<li><strong>Default Value</strong>: 0</li>
+<li><strong>Description</strong>: Specifies the order in which files of the same content type are loaded. Lower value is higher priority.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>IsFileRequired</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Allows the ContentPackage to be loaded even if the file is missing from the location. Otherwise, missing files in <code>ModConfig.xml</code> will cause the ContentPackage to not be loaded.</li>
+</ul>
+</blockquote>
+<hr />
+<p><strong>[Lua] Only</strong>:<br/>
+Attribute: <code>IsAutorun</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Specifies that the script file should be executed automatically (ie. autorun lua files).</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>RunUnrestricted</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Specifies that the script file should be executed without Sandboxing and unrestricted. </li>
+</ul>
+</blockquote>
+<hr />
+<p><strong>[Assembly] Only</strong>:<br/>
+Attribute: <code>IsScript</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Indicates that the following is a C# source/script file (not a binary/dll). </li>
+</ul>
+</blockquote>
+<p>Attribute: <code>UseInternalAccessName</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Required Attributes</strong>: <code>IsScript</code></li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: Specifies that the C# script should be compiled with <code>InternalAccess</code>. Mainly for use with legacy scripts.</li>
+</ul>
+</blockquote>
+<p>Attribute: <code>IsReferenceModeOnly</code></p>
+<blockquote>
+<ul>
+<li><strong>Required</strong>: No</li>
+<li><strong>Type</strong>: <code>Boolean</code></li>
+<li><strong>Default Value</strong>: <code>false</code></li>
+<li><strong>Acceptable Values</strong>: <code>true</code>,<code>false</code></li>
+<li><strong>Description</strong>: <code>[InternalUseOnly]</code> Specifies that the file should only be used for compilation of scripts and not executed.</li>
+</ul>
+</blockquote>
 
 
 

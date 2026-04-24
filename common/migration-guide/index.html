@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://luatrauma.github.io/Luatrauma.Docs/cs/setup-assembly-csharp/">
+        <link rel="canonical" href="https://luatrauma.github.io/Luatrauma.Docs/common/migration-guide/">
       
       
-        <link rel="prev" href="../setup-in-memory-csharp/">
+        <link rel="prev" href="../development/modconfig/">
       
       
-        <link rel="next" href="../development/harmony/">
+        <link rel="next" href="../../lua/getting-started/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Assembly CSharp Mods - Luatrauma Docs</title>
+        <title>Migration Guide (Spring, 2026) - Luatrauma Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#assembly-c-mod" class="md-skip">
+        <a href="#migration-guide-for-mods" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Assembly CSharp Mods
+              Migration Guide (Spring, 2026)
             
           </span>
         </div>
@@ -255,18 +255,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -287,7 +289,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -302,18 +304,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -334,7 +338,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -352,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../common/development/config-service/" class="md-nav__link">
+      <a href="../development/config-service/" class="md-nav__link">
         
   
   
@@ -380,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../common/development/config-specifications/" class="md-nav__link">
+      <a href="../development/config-specifications/" class="md-nav__link">
         
   
   
@@ -408,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../common/development/modconfig/" class="md-nav__link">
+      <a href="../development/modconfig/" class="md-nav__link">
         
   
   
@@ -433,10 +437,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../common/migration-guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migration Guide (Spring, 2026)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -452,6 +483,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-mods-in-memory-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Mods (In-Memory Scripts)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-mods-binary-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Mods (Binary Assembly)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C# Mods (Binary Assembly)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Option B:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lua-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lua Scripts
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -726,20 +827,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -760,7 +859,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -778,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../cs/introduction/" class="md-nav__link">
         
   
   
@@ -806,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-in-memory-csharp/" class="md-nav__link">
+      <a href="../../cs/setup-in-memory-csharp/" class="md-nav__link">
         
   
   
@@ -831,37 +930,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Assembly CSharp Mods
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../cs/setup-assembly-csharp/" class="md-nav__link">
         
   
   
@@ -877,120 +949,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Started
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-ide-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. IDE Setup
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-git-installation-highly-recommended" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Git Installation (highly recommended)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-create-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Create the Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-clonecreate-local-mod-copy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Clone/Create Local Mod Copy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-setup-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Setup the Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-test-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Test the Project.
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-structure-and-where-to-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project Structure and Where to Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1050,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../development/harmony/" class="md-nav__link">
+      <a href="../../cs/development/harmony/" class="md-nav__link">
         
   
   
@@ -1141,77 +1099,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#c-mods-in-memory-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting Started
+        C# Mods (In-Memory Scripts)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Getting Started">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-mods-binary-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Mods (Binary Assembly)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C# Mods (Binary Assembly)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-ide-setup" class="md-nav__link">
+  <a href="#option-b" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. IDE Setup
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-git-installation-highly-recommended" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Git Installation (highly recommended)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-create-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Create the Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-clonecreate-local-mod-copy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Clone/Create Local Mod Copy
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-setup-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Setup the Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-test-the-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Test the Project.
+        Option B:
       
     </span>
   </a>
@@ -1224,10 +1138,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-structure-and-where-to-code" class="md-nav__link">
+  <a href="#lua-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Structure and Where to Code
+        Lua Scripts
       
     </span>
   </a>
@@ -1251,145 +1165,55 @@
 
 
 
-<p>Last Updated: 2026-04-09<br/></p>
-<h1 id="assembly-c-mod">Assembly (C#) Mod</h1>
-<p>This type of mod creates compiled binaries/dll without code written in C#/.NET. The benefits of this workflow and mod type compared to a Lua mod are:</p>
+<p>Last Changed: 2026-04-09</p>
+<h1 id="migration-guide-for-mods">Migration Guide for Mods</h1>
+<p>This is the minimum work required Migration Guide for mods created before the LuaCsForBarotrauma refactor in the Spring Update, 2026. New mods or mods willing to completely migrate should make use of the <a href="setup-assembly-csharp.md">Assembly C# Tutorial</a></p>
+<h3 id="c-mods-in-memory-scripts">C# Mods (In-Memory Scripts)</h3>
+<p>Important Note: There is a legacy loading system built-in if your project follows the old structure (Lua files are in <code>Lua/...</code>, Csharp files are in <code>CSharp/...</code>, binary assemblies are in <code>bin/&lt;(Client|Server)&gt;/...</code>, etc.). If you wish to deviate from this, you will need to create a <a href="../development/modconfig/">ModConfig.xml</a> as per the API.</p>
+<p>There are generally only four (4) text changes that need to be made for immediate compatibility. </p>
+<p>Required Changes:
+<br/>
+1. The below code references need to be replaced with its new equivalent:</p>
 <blockquote>
 <ul>
-<li>Complete access to all Barotrauma functions.</li>
-<li>Better performance.</li>
-<li>Much faster loading for players.</li>
-<li>Custom game objects (ie. ItemComponents).</li>
-<li>Smart autocomplete and documentation.</li>
-<li>Hot Reload/Edit-and-Continue (edit code while it's running).</li>
-<li>Strong error checking and live debugging support.</li>
+<li>"<code>GameMain.LuaCs</code>" is now "<code>LuaCsSetup.Instance</code>"</li>
+<li>"<code>Client.ClientList</code>" is now "<code>ModUtils.Client.ClientList</code>"</li>
+<li>"<code>Barotrauma.Networking.Client.ClientList</code>" is now "<code>ModUtils.Client.ClientList</code>"</li>
+<li>"<code>ItemPrefab.GetItemPrefab</code>" is now "<code>ModUtils.ItemPrefab.GetItemPrefab</code>"</li>
 </ul>
 </blockquote>
-<p>The cons are:</p>
-<blockquote>
-<ul>
-<li>Players must have C# mods enabled.</li>
-<li>More complex language.</li>
-<li>The project requires more setup.</li>
-<li>Mods may need to be recompiled every few updates (9-12 months) if there are major game changes.</li>
-</ul>
-</blockquote>
-<h2 id="getting-started">Getting Started</h2>
 <hr />
-<h3 id="1-ide-setup">1. IDE Setup</h3>
-<p>You will need an IDE that supports <code>.NET 8</code> as a platform/SDK target. The following IDEs have been tested with the project and should work out of the box:</p>
-<blockquote>
-<ul>
-<li><a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community Edition</a></li>
-<li>Be sure to select the C#/.NET Desktop workload.</li>
-<li><a href="https://www.jetbrains.com/rider/download/?section=windows">JetBrains Rider IDE</a></li>
-</ul>
-</blockquote>
-<p>You may use another IDE but it will be up to you to fix any issues arising from it.</p>
-<h3 id="2-git-installation-highly-recommended">2. Git Installation (highly recommended)</h3>
-<p>Git is <em>the industry standard</em> for version control and is completely free. It allows you to save your work, revert back to previous versions, collaborate with others and more. It is not required but very helpful. <a href="https://git-scm.com/install/">Download it here</a> and install it.</p>
-<p>We will be using Git in the installation going forward.</p>
-<h3 id="3-create-the-project">3. Create the Project</h3>
-<ul>
-<li>Create/Log in to your Github account and then go to <a href="https://github.com/Luatrauma/LuaCsModTemplate">LuaCsModTemplate</a>.</li>
-<li>In the top-right corner, click <code>Use this Template</code>.</li>
-<li>Select <code>Create New Repository</code>. </li>
-<li>Name the repository the name of your mod.
-<br/><blockquote>
-<p><img alt="github-use-template-1191x628.png" src="../../assets/img/cs/github-use-template-1191x628.png" /><br/></p>
-</blockquote>
-</li>
-</ul>
-<h3 id="4-clonecreate-local-mod-copy">4. Clone/Create Local Mod Copy</h3>
-<ul>
-<li>In your new github repo, select the green <code>&lt;&gt; Code</code> button and copy the HTTPS repo link.
-  <br/><blockquote>
-<p><img alt="github-clone-link-450x364.png" src="../../assets/img/cs/github-clone-link-450x364.png" /><br/></p>
-</blockquote>
-</li>
-<li>Go to the directory on your PC where you want to store the project.</li>
-<li>Open Git Bash or CMD in that folder/directory (Google how to for your platform).</li>
-<li>Note: On Windows, you can right-click in the folder and select <code>Open Git Bash here</code>.</li>
-<li>in the terminal type: <code>git clone &lt;paste your repo link here&gt;</code> and press enter.</li>
-<li>Note: For Git Bash, the paste command is <code>Shift+Insert</code>. Don't ask me who decided this, I want to find them too.</li>
-<li>When completed, verify that the folder contents at least contain what you see on your Github repo.</li>
-</ul>
-<h3 id="5-setup-the-project">5. Setup the Project</h3>
-<ul>
-<li>Download the <a href="https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip">Luatrauma reference dlls</a> zip file and extract the contents into the <code>/Refs/</code> folder in your project.</li>
-<li>Note: Make sure that the files are in the top-level directory of <code>/Refs/</code> and not nested inside an additional folder from the extraction.</li>
-<li>Open <code>Build.props</code> in the main directory and go to the <code>User/Mod Settings</code> section.</li>
-<li>Replace contents of the <code>ModDeployDir</code> element with the path to your Barotrauma local mods, ie. <code>&lt;BarotraumaGame&gt;/LocalMods/&lt;YourModName&gt;/</code>:<blockquote>
-<ul>
-<li>Note: ModDeployDir must end with a '\'</li>
-<li>Example: "C:\Program Files (x86)\Steam\steamapps\common\Barotrauma\LocalMods\MyModName\"</li>
-</ul>
-</blockquote>
-</li>
-<li>
-<p>Replace the contents of <code>AssemblyName</code> and <code>RootNamespace</code> with your mod's name using the following rules:</p>
-<blockquote>
-<ul>
-<li>No spaces.</li>
-<li>No special characters (ie.  &lt; &gt;, \ / ;). Periods (.) are allowed.</li>
-<li>Use English characters only.</li>
-<li>Must start with a letter.
-<br/>
-<br/><img alt="build-props-1245x886.png" src="../../assets/img/cs/build-props-1245x886.png" /><br/></li>
-</ul>
-</blockquote>
-</li>
-<li>
-<p>Copy the <code>AssemblyName</code> and then open <code>Assets/Content/ModConfig.xml</code>.</p>
-</li>
-<li>Replace <code>[MODASSEMBLYNAME]</code> with your <code>AssemblyName</code> (keep the .dll ending).<blockquote>
-<p>Tip: Use your IDE, Notepad++ or another editor's 'Find and Replace' function to quickly do this.</p>
-</blockquote>
-</li>
-<li>Open <code>Assets/Content/filelist.xml</code> and change the mod name to your mod's name.</li>
-</ul>
-<p><br/><img alt="mod-config-modassemblyname-1033x408.png" src="../../assets/img/cs/mod-config-modassemblyname-1033x408.png" /><br/>
-- In the main directory, rename <code>MyModName.sln</code> to your mod's name.</p>
-<h3 id="6-test-the-project">6. Test the Project.</h3>
-<ul>
-<li>Open the renamed <code>&lt;MyModName.sln&gt;</code>.</li>
-<li>Build the project.</li>
-<li>In the top bar, select the Startup Project, then Launch Option / Configuration for your system (ie. <code>WindowsClient: Launch Barotrauma</code> ).</li>
-<li>Launch Barotrauma.
-<br/>
-<br/>
-<strong>Visual Studio</strong>:
-<br/><blockquote>
-<p><img alt="startup-profile-select-vs-442x266.png" src="../../assets/img/cs/startup-profile-select-vs-442x266.png" /><br/>
-<br/></p>
-</blockquote>
-</li>
-</ul>
-<p><strong>Jetbrains Rider</strong>:
-<br/></p>
-<blockquote>
-<p><img alt="startup-profile-select-rider-860x326.png" src="../../assets/img/cs/startup-profile-select-rider-860x326.png" /><br/></p>
-</blockquote>
-<ul>
-<li>On the Main Menu, <strong>add your mod to the Enabled Packages/Mods list.</strong></li>
-<li>Go into the Sub Editor and open the console (F3).</li>
-<li>Check to see if your mod was loaded in the console.
-<br/><blockquote>
-<p><img alt="mod-plugin-running-subeditor-979x509.png" src="../../assets/img/cs/mod-plugin-running-subeditor-979x509.png" /><br/></p>
-</blockquote>
-</li>
-</ul>
-<p>If your mod loaded successfully, you are now ready to mod!</p>
+<h3 id="c-mods-binary-assembly">C# Mods (Binary Assembly)</h3>
+<p>In addition to the changes under <code>In-Memory Scripts</code>, you will need to do the following: </p>
+<ol>
+<li>Download a fresh set of <a href="https://github.com/MapleWheels/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip">Luatrauma reference dlls</a> and place them in the <code>/Refs/</code> folder of your project.</li>
+<li>Add the following NuGet package references to your <code>Build.props</code> file (inside the <code>&lt;Project&gt;&lt;/Project&gt;</code> elements, separate from the <code>PropertyGroup</code>):
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;ItemGroup&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;PackageReference</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;LightInject&quot;</span><span class="w"> </span><span class="na">Version=</span><span class="s">&quot;6.6.4&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&lt;PackageReference</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;OneOf&quot;</span><span class="w"> </span><span class="na">Version=</span><span class="s">&quot;3.0.271&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&lt;PackageReference</span><span class="w"> </span><span class="na">Include=</span><span class="s">&quot;FluentResults&quot;</span><span class="w"> </span><span class="na">Version=</span><span class="s">&quot;3.16.0&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">&lt;/ItemGroup&gt;</span>
+</span></code></pre></div></li>
+</ol>
+<h4 id="option-b"><strong>Option B</strong>:</h4>
+<p>Migrate your project over to the <a href="setup-assembly-csharp.md">new template</a>, which is already setup for the new update.</p>
 <hr />
-<h2 id="project-structure-and-where-to-code">Project Structure and Where to Code</h2>
-<p><strong>Your entry point/startup for your code</strong> is <code>SharedProject/SharedSource/Plugin.cs</code>.</p>
-<p>All of your mod's non-code content should be put in <code>./Assets/Content/</code>.<br/>
-All of your Client-only code should be in <code>ClientProject/ClientSource</code>.<br/>
-All of your Shared code should be in <code>SharedProject/SharedSource</code>.<br/>
-All of your Server-only code should be in <code>ServerProject/ServerSource</code>.<br/></p>
-<p>Vanilla files should be added to <code>Assets/Content/filelist.xml</code> as per normal XML modding.
-Modded LuaCs-specific files is added via <code>Assets/Content/ModConfig.xml</code>.</p>
-<p>For more details on <code>ModConfig.xml</code> and the LuaCs API, see the <a href="development/modconfig.md">API pages</a>.</p>
+<h3 id="lua-scripts">Lua Scripts</h3>
+<p>Required Changes:
+<br/>
+1. The below code references need to be replaced with its new equivalent:</p>
+<blockquote>
+<ul>
+<li>"<code>GameMain.LuaCs</code>" is now "<code>LuaCsSetup.Instance</code>"</li>
+<li>"<code>Client.ClientList</code>" is now "<code>ModUtils.Client.ClientList</code>"</li>
+<li>"<code>Barotrauma.Networking.Client.ClientList</code>" is now "<code>ModUtils.Client.ClientList</code>"</li>
+<li>"<code>ItemPrefab.GetItemPrefab</code>" is now "<code>ModUtils.ItemPrefab.GetItemPrefab</code>"</li>
+</ul>
+</blockquote>
+<p>Important Notes:</p>
+<ol>
+<li>Many new APIs require your content package as an argument, such as the <code>ConfigService</code>. You will need to call <code>trygetpackage("your package name")</code> in order to retrieve it.</li>
+</ol>
 
 
 
